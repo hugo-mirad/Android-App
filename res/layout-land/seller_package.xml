@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_sellerpackage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_sellhomemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_sellerpackage_back"
+            android:layout_alignBottom="@+id/btn_sellerpackage_back"
+            android:layout_centerHorizontal="true"
+            android:text="Package List"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/addpackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_def_small"
+        android:text="ADD PACKAGE"
+        android:textColor="#d84a49"
+        android:textStyle="bold" />
+
+</LinearLayout>

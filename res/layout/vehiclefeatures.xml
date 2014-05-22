@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d84a49"
+         >
+
+        <Button
+            android:id="@+id/btn_vehiclefeature_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"  />
+
+        <Button
+            android:id="@+id/btn_vehiclefeature_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:background="#d84a49"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_vehiclefeature_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#d84a49"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_vehiclefeature_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+             android:background="#d84a49"
+            android:text="EDIT"
+            android:textColor="#FFFFFF" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_vehiclefeature_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclefeature_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:text="make"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclefeature_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:text="model"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_Comfort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Comfort: "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_comfort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="530dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_seats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Seats: "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_seats"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_safety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Safety: "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_safety"
+                    android:layout_width="fill_parent"
+                    android:layout_height="290dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_soundsystem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Sound System "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_soundsystem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_windows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Windows: "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_windows"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Other: "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="290dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="New : "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_new"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_specials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Specials : "
+                    android:textColor="#ffa500"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_specilas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:choiceMode="multipleChoice"
+                    android:textColor="@android:color/black"
+                    android:textSize="5pt" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

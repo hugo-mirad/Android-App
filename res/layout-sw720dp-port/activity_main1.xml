@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d84a49"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+       
+
+        <TextView
+            android:id="@+id/tv_login_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/home"
+            android:textSize="32dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="274dp"
+        android:background="@drawable/mobilogin_small"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_sellusername"
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="#000000"
+                android:ems="10"
+                android:hint="Username"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/et_sellpwd"
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="#000000"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_sellacount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="Not a member yet?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_sellmakeonenow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:text="@string/account"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="7dp" >
+
+            <Button
+                android:id="@+id/btn_selllogin"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:background="#d84a49"
+                android:text="Login"
+                android:textSize="24dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:src="@drawable/logosmall" />
+
+</RelativeLayout>

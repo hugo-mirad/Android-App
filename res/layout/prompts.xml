@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" 
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/EnterZip"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_above="@+id/editTextDialogUserInput"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="#ffa500" />
+    -->
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="48dp"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/Pleasenter"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

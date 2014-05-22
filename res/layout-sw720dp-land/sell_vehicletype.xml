@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sellvehicletype_make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="200dp"
+        android:text="Make:"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/et_sellvehicletype_make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sellvehicletype_make"
+        android:layout_alignBottom="@+id/sellvehicletype_make"
+        android:layout_marginLeft="85dp"
+        android:layout_toRightOf="@+id/sellvehicletype_make"
+        android:focusableInTouchMode="false"
+        android:textColor="#333333"
+        android:textSize="30dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/sellvehicletype_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellvehicletype_make"
+        android:layout_below="@+id/sellvehicletype_make"
+        android:layout_marginTop="40dp"
+        android:text="Model:"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/et_sellvehicletype_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sellvehicletype_model"
+        android:layout_alignBottom="@+id/sellvehicletype_model"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/sellvehicletype_model"
+        android:focusableInTouchMode="false"
+        android:textColor="#333333"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/sellvehicletype_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellvehicletype_model"
+        android:layout_below="@+id/sellvehicletype_model"
+        android:layout_marginTop="40dp"
+        android:text="Year:"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/et_sellvehicletype_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sellvehicletype_year"
+        android:layout_alignBottom="@+id/sellvehicletype_year"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/sellvehicletype_year"
+        android:focusableInTouchMode="false"
+        android:textColor="#333333"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_sellvehicletype_bodystyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellvehicletype_year"
+        android:layout_below="@+id/sellvehicletype_year"
+        android:layout_marginTop="55dp"
+        android:text="Body Style:"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_sellvehicletype_bodystyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sellvehicletype_bodystyle"
+        android:layout_alignBottom="@+id/tv_sellvehicletype_bodystyle"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_sellvehicletype_bodystyle"
+        android:clickable="false" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_sellcarvehicleedit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+           android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/btn_sellcarvehicleedit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+           android:background="#d84a49"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_sellcarvehicle_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_sellcarvehicle_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="EDIT"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="25dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_sellcarvehicletype_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sellcarvehicletype_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLength="8"
+                    android:text="make"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sellcarvehicletype_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLength="8"
+                    android:text="model"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sellvehicletype_bodystyle"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/note_vehicle"
+        android:textColor="#333333"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

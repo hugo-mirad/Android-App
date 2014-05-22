@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/btmrl"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#EEEEEE" >
+
+        <Button
+            android:id="@+id/car"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/popular" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/car"
+            android:layout_alignBottom="@+id/car"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/car"
+            android:background="@drawable/search" />
+
+        <Button
+            android:id="@+id/preference"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/search"
+            android:layout_alignBottom="@+id/search"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/search"
+            android:background="@drawable/preference" />
+
+        <Button
+            android:id="@+id/mylist"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/preference"
+            android:background="@drawable/my_list" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_above="@+id/btmrl"
+        android:background="#D0D0D0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d84a49" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Search Cars"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/search_gotohome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/v1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#F3F3F3" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="37dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="@string/Make"
+                        android:textColor="#333333" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/Makesearch"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/Model"
+                        android:textColor="#333333" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tableLayout1"
+                android:layout_alignRight="@+id/tableLayout1"
+                android:layout_below="@+id/tableLayout1" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/Zips"
+                    android:textColor="#333333" />
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/ZIP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:ems="10"
+                        android:hint="Please Enter Zip code"
+                        android:inputType="number"
+                        android:maxLength="5" >
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/searchbutton"
+                android:layout_width="175dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/tableLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:background="#d84a49"
+                android:gravity="center"
+                android:text="@string/Search"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

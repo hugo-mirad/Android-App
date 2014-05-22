@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="vertical"
+  android:background="#90FFFFFF"
+  android:layout_height="wrap_content">
+  
+ 
+  
+  <Button
+      android:layout_width="150dp"
+      android:id="@+id/popupcamera"
+      android:text="Camera"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content">
+  </Button>
+  <Button
+      android:layout_width="150dp"
+      android:id="@+id/popupgallery"
+      android:text="Photogallery"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content">
+  </Button>
+  
+  <Button
+      android:layout_width="150dp"
+      android:id="@+id/btnCancel"
+      android:text="Cancel"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content">
+  </Button>
+  
+</LinearLayout>

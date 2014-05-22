@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobi.mobicarz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <!--  <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" /> -->
+          <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mobi_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.mobi.mobicarz.MainHomeScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Seller lOgin  Activity -->
+        <activity android:name="com.mobi.sellacar.Seller_Login" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.Sell_Home"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellCarDetailView" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellCarDetails_Edit" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellCarDetails_Features" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellCarDetails_Gallery" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Sell_VehicleType" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellerInformation" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.VehicleInformation" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.VehicleFeatures" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.VehicleDescription" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Photo" />
+        <activity android:name="com.mobi.sellacar.MultisiteListing" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.MultisiteListingWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Vehiclephotos_Upload" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.CameraPhotoUploading" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.PhotoUploading"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Sell_Home_More" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SellerRegistration_Info" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Packages" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.Add_A_Car"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.Seller_Package_Basic"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name="com.mobi.sellacar.Seller_Package_Standard"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Customer_Support" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.Seller_Registration" >
+        </activity>
+        <activity android:name="com.mobi.sellacar.SamplePhotoUpload" >
+        </activity>
+
+        <!-- Find a car  Activity -->
+        <activity
+            android:name="com.mobi.mobicarz.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.SearchView"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.PreferenceView" />
+        <activity android:name="com.mobi.mobicarz.MyListView" />
+        <activity android:name="com.mobi.mobicarz.CarDetailView" />
+        <activity android:name="com.mobi.mobicarz.CarDetails_Features" />
+        <activity android:name="com.mobi.mobicarz.GalleryCars" />
+        <activity android:name="com.mobi.mobicarz.MyListCarDetailsView" />
+        <activity android:name="com.mobi.mobicarz.EmailActivity" />
+        <activity android:name="com.mobi.mobicarz.MyListCarDetails_Features" />
+        <activity android:name="com.mobi.mobicarz.SearchResultView" />
+        <activity
+            android:name="com.mobi.mobicarz.EditPreferencesOne"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.Showvalues"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferencesPage"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.EditPreferencesTwo"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.ViewCarsTwo" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferencesTwo"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.EditPreferencesThree"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.ViewCarsThree" />
+        <activity
+            android:name=".PreferencesThree"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.EditPreferencesFour"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.ViewCarsFour" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferencesFour"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.EditpreferencesFive"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.ViewCarsFive" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferencesFive"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.mobi.mobicarz.SearchCarDetailsView" />
+        <activity android:name="com.mobi.mobicarz.PreferenceCarDetailView" />
+        <activity android:name="com.mobi.mobicarz.PreferenceCarDetailViewTwo" />
+        <activity android:name="com.mobi.mobicarz.PreferenceCarDetailViewThree" />
+        <activity android:name="com.mobi.mobicarz.PreferenceCarDetailViewFour" />
+        <activity android:name="com.mobi.mobicarz.PreferenceCarDetailViewFive" />
+        <activity
+            android:name="com.mobi.mobicarz.SearchCarDetails_Features"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferenceCarDetailFeature"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferenceCarDetailViewTwoFeature"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferenceCarDetailViewThreeFeaturs"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferenceCarDetailViewFourFeaturs"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.PreferenceCarDetailViewFiveFeatures"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.AboutEmail"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.mobi.mobicarz.AboutUs"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".PreferenceOne"
+            android:launchMode="singleInstance" />
+        <activity android:name="ViewCarsOne" />
+        <activity android:name=".PreferenceGalleryCars" />
+        <activity android:name=".PreferenceTwoGalleryCars" />
+        <activity android:name=".PreferenceThreeGalleryCars" />
+        <activity android:name=".PreferenceFourGalleryCars" />
+        <activity android:name=".PreferenceFiveGalleryCars" />
+        <activity android:name=".SearchGalleryCars" />
+        <activity android:name=".MyListGalleryCars" />
+    </application>
+
+</manifest>

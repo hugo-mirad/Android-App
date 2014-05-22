@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launch_large_flip"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_home_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/info" />
+
+    <Button
+        android:id="@+id/btn_home_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_home_info"
+        android:layout_alignLeft="@+id/btn_home_findacar"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/loginbtn" />
+
+    <Button
+        android:id="@+id/btn_home_findacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/findacar" />
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#555" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Mobicarz"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

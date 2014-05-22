@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_sellpackage_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#d84a49"
+            android:text="PACKAGES"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_sellhomemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Package Details"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Package Name:"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sell_package_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_reg_name"
+        android:layout_alignBottom="@+id/tv_reg_name"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tv_reg_name"
+        android:text="text"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tv_sell_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_reg_name"
+        android:layout_below="@+id/tv_reg_name"
+        android:layout_marginTop="5dp"
+        android:text="Date of Purchase:"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sell_package_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sell_purchase"
+        android:layout_alignBottom="@+id/tv_sell_purchase"
+        android:layout_alignLeft="@+id/tv_sell_package_name"
+        android:text="TextView"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tv_sell_vaild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_sell_purchase"
+        android:layout_below="@+id/tv_sell_purchase"
+        android:layout_marginTop="5dp"
+        android:text="Validity:"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sell_package_validtill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sell_vaild"
+        android:layout_alignBottom="@+id/tv_sell_vaild"
+        android:layout_alignLeft="@+id/tv_sell_package_purchase"
+        android:text="TextView"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tv_sell_postedcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_sell_vaild"
+        android:layout_below="@+id/tv_sell_vaild"
+        android:layout_marginTop="5dp"
+        android:text="# of Posted cars:"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sell_package_postedcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sell_postedcars"
+        android:layout_alignBottom="@+id/tv_sell_postedcars"
+        android:layout_alignLeft="@+id/tv_sell_package_validtill"
+        android:text="TextView"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/addacar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sell_package_postedcars"
+        android:layout_alignBottom="@+id/tv_sell_package_postedcars"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_sell_package_postedcars"
+        android:background="@drawable/btn_def_small"
+        android:text="ADD A CAR"
+        android:textColor="#d84a49"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_sell_maxcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_sell_postedcars"
+        android:layout_below="@+id/tv_sell_postedcars"
+        android:layout_marginTop="5dp"
+        android:text="# of Max Cars:"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sell_package_maxcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_sell_maxcars"
+        android:layout_alignBottom="@+id/tv_sell_maxcars"
+        android:layout_alignRight="@+id/tv_sell_package_postedcars"
+        android:text="TextView"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <ListView
+        android:id="@+id/basic_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_sell_maxcars"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

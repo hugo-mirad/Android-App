@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/btmrl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#EEEEEE" >
+
+        <Button
+            android:id="@+id/car"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/popular" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/car"
+            android:layout_alignBottom="@+id/car"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/car"
+            android:background="@drawable/search" />
+
+        <Button
+            android:id="@+id/preference"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/search"
+            android:layout_alignBottom="@+id/search"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/search"
+            android:background="@drawable/preference" />
+
+        <Button
+            android:id="@+id/mylist"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            
+            android:layout_toRightOf="@+id/preference"
+            android:background="@drawable/my_list" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/cars_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_below="@+id/toprl"
+        android:layout_marginBottom="57dp"
+        android:background="#F3F3F3"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:verticalSpacing="2dp" >
+    </GridView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="7dip"
+        android:layout_above="@+id/btmrl"
+        android:background="#D0D0D0" />
+
+   <!--  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#444" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Popular Cars"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_gototohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/home_small"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zipclick"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@string/Zips"
+        android:textColor="#000000"
+        android:textSize="12dp" /> -->
+        <RelativeLayout
+        android:id="@+id/toprl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#d84a49" >
+
+        <TextView
+            android:id="@+id/home_gototohome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Popular Cars"
+            android:textColor="#FFFFFF"
+             android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+         <TextView
+        android:id="@+id/zipclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+       android:text="zip"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

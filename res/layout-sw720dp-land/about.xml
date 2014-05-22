@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDED" >
+
+    <TextView
+        android:id="@+id/textView1_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#d84a49"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_contactphno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_contact"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_contact"
+        android:text="888-786-8307"
+        android:textColor="#d84a49"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_emailaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_email"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_email"
+        android:text="info@unitedcarexchange.com"
+        android:textColor="#d84a49"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_about_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#d84a49"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/tv_portal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unitedcar"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="27dp"
+        android:text="Number one portal for car buyers and sellers"
+        android:textColor="#333333"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_unitedcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_about_home"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="150dp"
+        android:text="www.mobicarz.com"
+        android:textColor="#d84a49"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_portal"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="26dp"
+        android:text="Contact: "
+        android:textColor="#333333"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_contact"
+        android:layout_below="@+id/tv_contact"
+        android:layout_marginTop="24dp"
+        android:text="Email:"
+        android:textColor="#333333"
+        android:textSize="26dp" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_vehicleinformation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_vehicleinformation_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_vehicleinformation_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_vehicleinformation_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:text="EDIT"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="25dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_vehicleinformation_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehicleinformation_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLength="8"
+                    android:text="make"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehicleinformation_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLength="8"
+                    android:text="model"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34dp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:text="Title:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_vehicleinfo_title"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="173dp"
+                    android:maxLength="20"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Asking Price:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_vehicleinfo_askingprice"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="67dp"
+                    android:focusable="false"
+                    android:maxLength="20"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Mileage:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_vehicleinfo_mileage"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="130dp"
+                    android:focusable="false"
+                    android:maxLength="20"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Exterior Color:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_exteriorcolor"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="51dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Interior Color:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_interiorcolor"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="55dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Transmission:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_transmission"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="49dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Condition:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_condition"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Drive Train:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_drivetrain"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="81dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine Cylinders:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_enginecylinders"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="42dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Doors:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_doors"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="145dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="FuelType:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/et_vehicleinfo_fueltype"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Vin:"
+                    android:textColor="#333333"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_vehicleinfo_vin"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="180dp"
+                    android:focusable="false"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

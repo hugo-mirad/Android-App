@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Name Label -->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text="android"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text="(Package ID is: "
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/packageid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=" "
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=")"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/validy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=""
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+          <TextView
+            android:id="@+id/paydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=""
+            android:textSize="26sp"
+            android:textStyle="bold"
+              android:visibility="gone"/>
+           <TextView
+            android:id="@+id/maxcars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=""
+            android:textSize="26sp"
+            android:textStyle="bold"
+             android:visibility="gone" />
+            <TextView
+            android:id="@+id/postedcars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=""
+            android:textSize="26sp"
+            android:textStyle="bold"
+             android:visibility="gone" />
+             <TextView
+            android:id="@+id/userpackid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:text=""
+            android:textSize="26sp"
+            android:textStyle="bold"
+             android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

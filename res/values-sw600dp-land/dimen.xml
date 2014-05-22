@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="textsize">28sp</dimen>
+     <dimen name="textsize1">24sp</dimen>
+     <integer name="padding_left">0</integer>
+    <integer name="padding_top">10</integer>
+    <integer name="padding_right">40</integer>
+    <integer name="padding_bottom">10</integer>
+    <bool name="is_tablet">true</bool>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/sellhomedisplay_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/gallery_thumb" >
+    </ImageView>
+"
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/sellhomedisplay_img" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_selldisplay_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="year"
+                android:layout_marginTop="9dp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <!--
+            <TextView
+                android:id="@+id/tv_selldisplay_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="make"
+                android:textColor="#ffa500" />
+
+            <TextView
+                android:id="@+id/tv_selldisplay_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="model"
+                android:textColor="#ffa500" />
+            -->
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--
+            <TextView
+                android:id="@+id/selldisplay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Price($): "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_selldisplay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:textColor="#d84a49"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--
+                 <TextView
+                android:id="@+id/selldisplay_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Mileage: "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_selldisplay_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginTop="5dp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_selldisplay_carid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

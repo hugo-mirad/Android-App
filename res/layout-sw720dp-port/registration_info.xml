@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_canel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#d84a49"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_registration_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_back"
+            android:layout_alignBottom="@+id/btn_back"
+            android:layout_centerHorizontal="true"
+            android:text="Registration Info"
+            android:textColor="#FFFFFF"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_registration_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#d84a49"
+            android:text="EDIT"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_registration_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#d84a49"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="40dp" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Name:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et_reg_name"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Company Name:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_companyname"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:focusable="false"
+                    android:maxLength="20"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_phoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Phone:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et_reg_phoneno"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_altphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Alt Phone:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_altphone"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:digits="0123456789"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_emailid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Email ID:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et_reg_emailid"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/tv_reg_altemailid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Alt Email ID:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_altemailid"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="25"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Address:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_address"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:focusable="false"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="City:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_city"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:focusable="false"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Zip code:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_reg_zipcode"
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:digits="0123456789"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:maxLength="5"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_reg_statename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="State Name:"
+                    android:textColor="#333333"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reginfo_statename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="State"
+                    android:textColor="#333333"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/sp_reg_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:clickable="false"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:text="Note:Please contact customer support to change Name,Phone and Email"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

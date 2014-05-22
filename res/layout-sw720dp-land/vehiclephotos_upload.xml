@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_vehiclephotoupload_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+             android:background="#d84a49"
+             android:textSize="28sp"
+            android:text="BACK"
+            android:textColor="#FFFFFF" />
+
+        <!--
+        <Button
+            android:id="@+id/btn_vehiclephotoupload_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:background="#000000"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_sellerinformation_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:background="#000000"
+            android:text="Edit"
+            android:textColor="#FFFFFF" />
+        -->
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btn_vehiclephotoupload_back" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_vehiclephotoupload_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="370dp"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclephotoupload_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:maxLength="8"
+                    android:text="make"
+                    android:textSize="26dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclephotoupload_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:maxLength="8"
+                    android:text="model"
+                    android:textSize="26dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <Gallery
+        android:id="@+id/viewGaleery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+      android:layout_marginTop="80dp"
+        />
+
+    <Button
+        android:id="@+id/btn_vehiclephoto_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/ic_menu_camera" />
+
+    <ImageView
+        android:id="@+id/left_arrow_imageview"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_above="@+id/btn_vehiclephoto_upload"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/arrow_left_enabled" />
+
+    <ImageView
+        android:id="@+id/right_arrow_imageview"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignRight="@+id/btn_vehiclephoto_upload"
+        android:layout_alignTop="@+id/left_arrow_imageview"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/arrow_right_disabled" />
+
+    <TextView
+        android:id="@+id/photo_totalimages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textSize="22dp"
+        android:textColor="#FFFFFF" />
+     <TextView
+        android:id="@+id/tv_gallerycarno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_totalimages"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+         android:textSize="22dp"
+        android:text="" />
+
+</RelativeLayout>

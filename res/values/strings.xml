@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobiCarz</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- xml -->
+
+    <string name="CarDetails">Car Details:</string>
+    <string name="gallery">Gallery</string>
+    <string name="mylist">My List</string>
+    <string name="call">Call</string>
+    <string name="SellerInfo">Seller Info</string>
+    <string name="Phone">Phone:</string>
+    <string name="Email">Email:</string>
+    <string name="Address">Location:</string>
+    <string name="VehicleDescription">Vehicle Description</string>
+    <string name="Make">Make:</string>
+    <string name="Model">Model:</string>
+    <string name="InteriorColor">Interior Color:</string>
+    <string name="Year">Year:</string>
+    <string name="BodyStyle">Body Style:</string>
+    <string name="ExteriorColor">Exterior Color:</string>
+    <string name="Doors">Doors:</string>
+    <string name="VehicleCondition">Vehicle Condition:</string>
+    <string name="Price">Price($):</string>
+    <string name="Mileage">Mileage(Miles):</string>
+    <string name="Transmission">Transmission:</string>
+    <string name="Fuel">Fuel:</string>
+    <string name="Engine">Engine:</string>
+    <string name="DriveTrain">DriveTrain:</string>
+    <string name="VIN">VIN:</string>
+    <string name="Description">Description:</string>
+    <string name="SendEmail">Send Email</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Emails">Email</string>
+    <string name="City">City</string>
+    <string name="Prices">Price</string>
+    <string name="Message">Message</string>
+    <string name="Submit">Submit</string>
+    <string name="zip">Zip:?</string>
+    <string name="Home">Home</string>
+    <string name="Zips">Zip:  </string>
+    <string name="Zipss">Zip</string>
+    <string name="NoCarsFound">No Cars Found</string>
+    <string name="SearchResults">Search Results</string>
+    <string name="Search">Search</string>
+    <string name="Searchusedcars">Search used cars</string>
+    <string name="within"> within</string>
+    <string name="EnterZip">Enter Zip</string>
+    <string name="Pleasenter">  Enter Zip Code</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="preferenceOne">Preference-1</string>
+    <string name="preferencetwo">Preference-2</string>
+    <string name="preferencethree">Preference-3</string>
+    <string name="preferencefour">Preference-4</string>
+    <string name="preferencefive">Preference-5</string>
+    <string name="preference">Preference</string>
+    <string name="InvalidZip">Invalid Zip </string>
+    <string name="validZip">Please Enter Valid Zip </string>
+    <string name="NORESULTS">NO RESULTS</string>
+    <string name="NOcars">No cars were added recently in your area. Do you want to see all recent cars instead?</string>
+    <string name="MyList">My List</string>
+    <string name="nodata"> You can add cars to MyList from Popular Cars, Search or Preference Screens</string>
+    
+<!--     sell strings -->
+
+    <string name="sellusername">Username:</string>
+    <string name="sellpwd">Password:</string>
+    <string name="name">Name:*</string>
+    <string name="email">Email:*</string>
+    <string name="confirmemail">Confirm Email:*</string>
+    <string name="phone">Phone:*</string>
+    <string name="register">Register</string>
+    <string name="reg_name">Name:</string>
+    <string name="reg_company_name">Company Name:</string>
+    <string name="account"><u>REGISTER NOW</u></string>
+    <string name="note">Note: This information not shown for public use.</string>
+    <string name="note_vehicle">Note: Please contact Customer Support to update Make, Model and Year.</string>
+    <string name="phonenumber">0123456789</string>
+    <!--     Network string  -->
+    <string name="address">Address:</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
+    <string name="latlng">Lat/Long:</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="not_support_gps">GPS provider not supported</string>
+    <string name="not_support_network">Network provider not supported</string>
+    <string name="use_fine_provider">Fine-grain provider</string>
+    <string name="use_both_providers">Both providers</string>
+
+</resources>

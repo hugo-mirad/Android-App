@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#d84a49" >
+
+        <Button
+            android:id="@+id/btn_multisitelist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/tv_multisiteheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/payblox_terminal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!--
+                 <TextView
+                android:id="@+id/tv_col1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:gravity="center_horizontal"
+                android:text="S.No"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_col2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/tv_col1"
+                android:gravity="center_horizontal"
+                android:text="Website"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <!--
+                 <TextView
+                android:id="@+id/tv_col3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/tv_col2"
+                android:gravity="center_horizontal"
+                android:text="MultiSitesURl"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_col4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/tv_col2"
+                android:gravity="center_horizontal"
+                android:text="Posted Date"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_col5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/tv_col4"
+                android:gravity="center_horizontal"
+                android:text="Validity(Days)"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_col6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payblox_terminal"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/tv_col5"
+                android:gravity="center_horizontal"
+                android:text="URL"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_col2"
+                android:layout_marginTop="25dp" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
