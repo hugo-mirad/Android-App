@@ -43,7 +43,7 @@ public class Customer_Support extends Activity {
 		super.onCreate(savedInstanceState);
 		if (isOnline()) {
 			//System.out.println("this is customer");
-			setContentView(R.layout.about);
+			setContentView(R.layout.customersupport);
 
 			tv_heading = (TextView) findViewById(R.id.textView1_heading);
 			tv_heading.setText("Contact Us");

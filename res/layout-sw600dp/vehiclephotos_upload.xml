@@ -19,6 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="20dp"
+            android:textSize="28dp"
              android:background="#d84a49"
             android:text="BACK"
             android:textColor="#FFFFFF" />
@@ -46,7 +47,7 @@
                     android:layout_marginLeft="20dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
-                    android:textSize="22dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -57,7 +58,7 @@
                     android:maxLength="8"
                     android:text="make"
                     android:textColor="#FFFFFF"
-                    android:textSize="22dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -68,7 +69,7 @@
                     android:maxLength="8"
                     android:text="model"
                     android:textColor="#FFFFFF"
-                    android:textSize="22dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>
@@ -120,8 +121,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18dp" />
+        android:textColor="#333333"
+        android:textSize="22dp" />
 
     <TextView
         android:id="@+id/tv_gallerycarno"
@@ -130,7 +131,7 @@
         android:layout_below="@+id/photo_totalimages"
         android:layout_centerHorizontal="true"
         android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18dp" />
+        android:textColor="#333333"
+        android:textSize="22dp" />
 
 </RelativeLayout>

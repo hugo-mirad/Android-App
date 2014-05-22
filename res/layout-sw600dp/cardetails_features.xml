@@ -21,16 +21,16 @@
             android:gravity="center"
             android:text="Car Features"
             android:textColor="#FFFFFF"
-            android:textSize="22dp"
+            android:textSize="26sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/carfeatures_button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/mobi_back" />
     </RelativeLayout>
 
@@ -47,6 +47,7 @@
             android:id="@+id/ll_features"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:orientation="vertical" >
         </LinearLayout>
     </ScrollView>

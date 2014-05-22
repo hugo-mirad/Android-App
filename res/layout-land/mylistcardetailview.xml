@@ -74,12 +74,12 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" >
+            android:layout_height="50dp" >
 
             <Button
                 android:id="@+id/btn_mylistcardetail_back"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="7dp"
                 android:background="@drawable/mobi_back"
@@ -90,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
                 android:text=""
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
@@ -99,6 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
@@ -109,6 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
@@ -137,10 +140,10 @@
             <ImageView
                 android:id="@+id/image_id"
                 android:layout_width="300dp"
-                android:layout_height="80dp"
+                android:layout_height="110dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="45dp" />
+                android:layout_marginTop="15dp" />
 
             <TableRow
                 android:id="@+id/tableRow20"

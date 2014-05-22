@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:background="#d84a49" >
 
         <Button
@@ -18,7 +18,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#d84a49"
             android:text="MORE"
             android:textColor="#FFFFFF"
@@ -31,7 +31,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="My Listed Cars"
             android:textColor="#ffffff"
@@ -45,7 +45,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#d84a49"
             android:text="LOGOUT"
             android:textColor="#FFFFFF"

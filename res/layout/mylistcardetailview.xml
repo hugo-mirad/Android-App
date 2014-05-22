@@ -71,24 +71,22 @@
 
         <TableRow
             android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content" >
 
             <Button
                 android:id="@+id/btn_mylistcardetail_back"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="7dp"
                 android:background="@drawable/mobi_back"
                 android:textColor="#FFFFFF" />
-
 
             <TextView
                 android:id="@+id/tv_cardetailview_year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="35dp"
                 android:text=""
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
@@ -109,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:maxLength="8"
-                android:text=""
+                android:text="text"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </TableRow>
@@ -120,8 +118,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btmrl"
-        android:background="#F3F3F3"
-        android:layout_below="@+id/tableLayout_new" >
+        android:layout_below="@+id/tableLayout_new"
+        android:background="#F3F3F3" >
 
         <LinearLayout
             android:id="@+id/l_layout"
@@ -139,7 +137,7 @@
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="15dp" />
 
             <TableRow
                 android:id="@+id/tableRow20"
@@ -148,7 +146,7 @@
 
                 <Button
                     android:id="@+id/call"
-                     android:layout_width="70dp"
+                    android:layout_width="70dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="3dp"
                     android:background="@drawable/mobicall_small"
@@ -158,7 +156,7 @@
 
                 <Button
                     android:id="@+id/viewgallery"
-                   android:layout_width="70dp"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/btn_def_small"

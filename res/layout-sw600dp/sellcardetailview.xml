@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="#d84a49" >
 
         <Button
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/mobi_back"
             android:textSize="25dp" />
 
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="25dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
             android:background="#d84a49"
             android:text="EDIT"
@@ -50,7 +50,7 @@
                     android:id="@+id/tv_sellcardetailview_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="60dp"
                     android:text="TextView"
                     android:textColor="#ffffff"
                     android:textSize="28dp"

@@ -82,10 +82,10 @@
                     android:id="@+id/tv_vehicledescription_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="180dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
-                    android:textSize="36dp"
+                    android:textSize="28dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:maxLength="8"
                     android:text="make"
                     android:textColor="#FFFFFF"
-                    android:textSize="32dp"
+                    android:textSize="28dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:maxLength="8"
                     android:text="model"
                     android:textColor="#FFFFFF"
-                    android:textSize="32dp"
+                    android:textSize="28dp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>

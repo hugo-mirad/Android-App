@@ -77,8 +77,8 @@
 
             <Button
                 android:id="@+id/btn_mylistcardetail_back"
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="7dp"
                 android:background="@drawable/mobi_back"
@@ -90,8 +90,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="350dp"
                 android:text=""
+                android:layout_marginTop="20dp"
                 android:textColor="#FFFFFF"
-                android:textSize="28dp"
+                android:textSize="26dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -102,7 +103,8 @@
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
-                android:textSize="28dp"
+                 android:layout_marginTop="20dp"
+                android:textSize="26dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -113,7 +115,8 @@
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
-                android:textSize="28dp"
+                 android:layout_marginTop="20dp"
+                android:textSize="26dp"
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>
@@ -146,7 +149,8 @@
             <TableRow
                 android:id="@+id/tableRow20"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
 
                 <Button
                     android:id="@+id/call"

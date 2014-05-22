@@ -82,7 +82,7 @@
                     android:id="@+id/tv_vehiclefeature_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
+                    android:layout_marginLeft="180dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="30dp"

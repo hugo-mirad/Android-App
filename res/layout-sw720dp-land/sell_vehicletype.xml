@@ -179,7 +179,7 @@
                     android:id="@+id/tv_sellcarvehicletype_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
+                    android:layout_marginLeft="240dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="30dp"

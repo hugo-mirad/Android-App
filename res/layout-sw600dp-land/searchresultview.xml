@@ -79,15 +79,14 @@
             android:gravity="center"
             android:text=""
             android:textColor="#FFFFFF"
-            android:textSize="28dp" />
+            android:textSize="26sp" />
 
         <Button
             android:id="@+id/Searchback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
             android:background="@drawable/mobi_back" />
     </RelativeLayout>
 
@@ -95,7 +94,7 @@
         android:id="@+id/searchgrid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-         android:layout_above="@+id/v1"
+        android:layout_above="@+id/v1"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/relativeLayout1"
         android:background="#F3F3F3"

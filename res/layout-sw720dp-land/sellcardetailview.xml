@@ -52,7 +52,7 @@
                     android:id="@+id/tv_sellcardetailview_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="275dp"
+                    android:layout_marginLeft="320dp"
                     android:text="TextView"
                     android:textColor="#ffffff"
                     android:textSize="30dp"
@@ -90,7 +90,7 @@
         android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="500dp"
         android:layout_marginRight="200dp"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/sellcardetails_viewgallery"

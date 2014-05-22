@@ -36,13 +36,13 @@
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
-                android:layout_marginBottom="30dp">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/tv_sellcardetailedit_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="80dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="32dp"

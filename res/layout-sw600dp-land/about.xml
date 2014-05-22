@@ -4,7 +4,8 @@
     android:layout_height="fill_parent"
     android:background="#EDEDED" >
 
-    <TextView
+    <!--
+         <TextView
         android:id="@+id/textView1_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:textColor="#d84a49"
         android:textSize="30px"
         android:textStyle="bold" />
+    -->
 
     <TextView
         android:id="@+id/tv_contactphno"
@@ -35,11 +37,12 @@
         android:layout_alignBaseline="@+id/tv_email"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_email"
-        android:text="info@unitedcarexchange.com"
+        android:text="info@mobicarz.com"
         android:textColor="#d84a49"
         android:textSize="30px" />
 
-    <TextView
+    <!--
+         <TextView
         android:id="@+id/tv_about_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,6 +52,7 @@
         android:layout_marginTop="45dp"
         android:textColor="#d84a49"
         android:textSize="30px" />
+    -->
 
     <TextView
         android:id="@+id/tv_portal"
@@ -66,7 +70,7 @@
         android:id="@+id/tv_unitedcar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_about_home"
+        android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="150dp"
         android:text="www.mobicarz.com"
@@ -96,6 +100,35 @@
         android:textColor="#333333"
         android:textSize="24dp" />
 
-    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#d84a49" >
+
+        <TextView
+            android:id="@+id/tv_about_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView1_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_about_home"
+            android:layout_alignBottom="@+id/tv_about_home"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 </RelativeLayout>

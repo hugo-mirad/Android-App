@@ -4,44 +4,18 @@
     android:layout_height="fill_parent"
     android:background="#EDEDED" >
 
-    <TextView
-        android:id="@+id/tv_contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/tv_portal"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="20dp"
-        android:text="Contact: "
-        android:textColor="#333333"
-        android:textSize="18px" />
-
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/tv_contact"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="20dp"
-        android:text="Email:"
-        android:textColor="#333333"
-        android:textSize="18px" />
-
-    <!--
-         <TextView
+   <!--  <TextView
         android:id="@+id/textView1_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"
         android:text=""
         android:textColor="#d84a49"
-        android:textSize="25px"
-        android:textStyle="bold" />
-    -->
+        android:textSize="30px"
+        android:textStyle="bold" /> -->
 
     <TextView
         android:id="@+id/tv_contactphno"
@@ -52,7 +26,7 @@
         android:layout_toRightOf="@+id/tv_contact"
         android:text="888-786-8307"
         android:textColor="#d84a49"
-        android:textSize="18px" />
+        android:textSize="30px" />
 
     <TextView
         android:id="@+id/tv_emailaddress"
@@ -63,60 +37,82 @@
         android:layout_toRightOf="@+id/tv_email"
         android:text="info@mobicarz.com"
         android:textColor="#d84a49"
-        android:textSize="18px" />
+        android:textSize="30px" />
 
-    <!--
-         <TextView
+    <!-- <TextView
         android:id="@+id/tv_about_home"
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:textColor="#d84a49"
-        android:textSize="18px" />
-    -->
-
-    <TextView
-        android:id="@+id/tv_unitedcar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/relativeLayout1"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="47dp"
-        android:text="www.mobicarz.com"
-        android:textColor="#d84a49"
-        android:textSize="18px"
-        android:textStyle="bold" />
-
+        android:textSize="30px" />
+ -->
     <TextView
         android:id="@+id/tv_portal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_unitedcar"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="27dp"
         android:text="Number one portal for car buyers and sellers"
         android:textColor="#333333"
-        android:textSize="16px"
+        android:textSize="26dp"
         android:textStyle="italic" />
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/tv_unitedcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_portal"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="259dp"
+        android:text="www.mobicarz.com"
+        android:textColor="#d84a49"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_portal"
+        android:layout_below="@+id/tv_portal"
+        android:layout_marginTop="26dp"
+        android:text="Contact: "
+        android:textColor="#333333"
+        android:textSize="18px" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_contact"
+        android:layout_below="@+id/tv_contact"
+        android:layout_marginTop="24dp"
+        android:text="Email:"
+        android:textColor="#333333"
+        android:textSize="18px" />
+    
+      <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:background="#d84a49" >
 
         <TextView
             android:id="@+id/tv_about_home"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/home"
+            android:layout_marginTop="25dp"
+            android:background="#d84a49"
+            android:textSize="26sp"
+            android:text="BACK"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -128,8 +124,9 @@
             android:layout_centerHorizontal="true"
             android:text=""
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </RelativeLayout>
+    
 
 </RelativeLayout>

@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="#d84a49" >
 
         <Button
@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:background="#d84a49"
             android:text="MORE"
             android:textColor="#FFFFFF"
@@ -33,11 +33,11 @@
             android:layout_alignParentRight="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:gravity="center"
             android:text="My Listed Cars"
             android:textColor="#ffffff"
-            android:textSize="28dp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <Button
@@ -47,7 +47,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginBottom="15dp"
             android:layout_marginRight="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:background="#d84a49"
             android:text="LOGOUT"
             android:textColor="#FFFFFF"
@@ -60,9 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/relativeLayout1"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:cacheColorHint="#00000000" >
     </ListView>
 

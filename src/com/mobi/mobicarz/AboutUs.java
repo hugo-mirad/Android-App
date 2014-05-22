@@ -50,13 +50,13 @@ public class AboutUs extends Activity {
 			tv_emailaddress = (TextView) findViewById(R.id.tv_emailaddress);
 			tv_heading.setText("About Us");
 			tv_home_back = (TextView) findViewById(R.id.tv_about_home);
-			if (isSmartphone(AboutUs.this)) {
+			/*if (isSmartphone(AboutUs.this)) {
 
-				tv_home_back.setBackgroundResource(R.drawable.home_small);
+				tv_home_back.setBackgroundResource(R.drawable.home);
 			} else {
 
-				tv_home_back.setBackgroundResource(R.drawable.home_big);
-			}
+				tv_home_back.setBackgroundResource(R.drawable.home);
+			}*/
 
 			tv_home_back.setOnClickListener(new OnClickListener() {
 

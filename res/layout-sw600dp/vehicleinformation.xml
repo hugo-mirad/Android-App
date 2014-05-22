@@ -63,7 +63,7 @@
             android:background="#d84a49"
             android:text="EDIT"
             android:textColor="#FFFFFF"
-            android:textSize="28dp" />
+            android:textSize="30dp" />
 
         <TableLayout
             android:id="@+id/tableLayout1"
@@ -85,7 +85,7 @@
                     android:layout_marginLeft="15dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
-                    android:textSize="32dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:maxLength="8"
                     android:text="make"
                     android:textColor="#FFFFFF"
-                    android:textSize="32dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:maxLength="8"
                     android:text="model"
                     android:textColor="#FFFFFF"
-                    android:textSize="32dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/launch_large_flip"
+    android:background="#d84a49"
     android:orientation="vertical" >
 
     <Button
@@ -18,7 +18,7 @@
     <Button
         android:id="@+id/btn_home_login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_above="@+id/btn_home_info"
         android:layout_alignLeft="@+id/btn_home_findacar"
         android:layout_marginBottom="188dp"
@@ -26,13 +26,16 @@
 
     <Button
         android:id="@+id/btn_home_findacar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/findacar" />
+       android:background="@drawable/btn"
+        android:text="Find A Car"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
     
-     <RelativeLayout
+     <!-- <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -48,6 +51,6 @@
             android:textColor="#FFFFFF"
             android:textSize="30dp"
             android:textStyle="bold" />
-    </RelativeLayout>
+    </RelativeLayout> -->
 
 </RelativeLayout>

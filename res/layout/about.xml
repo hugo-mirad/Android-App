@@ -54,21 +54,6 @@
         android:textColor="#333333"
         android:textSize="18px" />
 
-    <!--
-         <TextView
-        android:id="@+id/textView1_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text=""
-        android:textColor="#d84a49"
-        android:textSize="25px"
-        android:textStyle="bold" />
-    -->
-
     <TextView
         android:id="@+id/tv_contactphno"
         android:layout_width="wrap_content"
@@ -87,22 +72,9 @@
         android:layout_alignBaseline="@+id/tv_email"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_email"
-        android:text="info@unitedcarexchange.com"
+        android:text="info@mobicarz.com"
         android:textColor="#d84a49"
         android:textSize="18px" />
-
-    <!--
-         <TextView
-        android:id="@+id/tv_about_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:background="#d84a49"
-        android:text="BACK"
-        android:textColor="#FFFFFF"
-        android:textSize="18px" />
-    -->
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -112,14 +84,13 @@
 
         <TextView
             android:id="@+id/tv_about_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="15dp"
-            android:background="#d84a49"
-            android:text="BACK"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home"
             android:textColor="#FFFFFF" />
 
         <TextView

@@ -46,7 +46,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="60dp"
             android:layout_marginTop="20dp"
-             android:background="#d84a49"
+            android:background="#d84a49"
             android:text="SAVE"
             android:textSize="28dp"
             android:visibility="invisible" />
@@ -75,8 +75,8 @@
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:layout_marginBottom="20dp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
 
                 <TextView
                     android:id="@+id/tv_vehiclefeature_year"
@@ -85,7 +85,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:maxLength="8"
                     android:text="make"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:maxLength="8"
                     android:text="model"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="24dp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>
@@ -120,7 +120,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/relativeLayout1"
-        android:layout_marginTop="50dp" >
+        android:layout_marginTop="20dp" >
 
         <LinearLayout
             android:layout_width="fill_parent"

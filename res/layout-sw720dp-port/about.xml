@@ -35,7 +35,7 @@
         android:layout_alignBaseline="@+id/tv_email"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_email"
-        android:text="info@unitedcarexchange.com"
+        android:text="info@mobicarz.com"
         android:textColor="#d84a49"
         android:textSize="36px" />
 
