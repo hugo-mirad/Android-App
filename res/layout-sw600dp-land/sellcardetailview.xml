@@ -90,7 +90,7 @@
         android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="300dp"
         android:layout_marginRight="200dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/sellcardetails_viewgallery"
@@ -101,6 +101,7 @@
         android:background="@drawable/btn_def_big"
         android:text="GALLERY"
         android:textColor="#d84a49"
+        android:layout_marginTop="5dp" 
         android:textSize="26sp"
         android:textStyle="bold" />
 
@@ -114,6 +115,7 @@
         android:background="@drawable/btn_def_big"
         android:text="FEATURES"
         android:textColor="#d84a49"
+        android:layout_marginTop="5dp" 
         android:textSize="26sp"
         android:textStyle="bold"  />
 

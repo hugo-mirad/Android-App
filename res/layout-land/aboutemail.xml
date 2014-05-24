@@ -3,7 +3,7 @@
     android:id="@+id/linearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/login_bg"
+    android:background="#ffffff"
     android:orientation="vertical" >
 
     <ScrollView
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="To : "
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFFFFF" />
+                android:textColor="#333333" />
 
             <TextView
                 android:id="@+id/editTextTo"
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:text="info@unitedcarexchange.com"
-                android:textColor="#FFFFFF" >
+                android:textColor="#333333" >
             </TextView>
 
             <TextView
@@ -40,13 +40,13 @@
                 android:layout_height="wrap_content"
                 android:text="Subject : "
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFFFFF" />
+                android:textColor="#333333" />
 
             <EditText
                 android:id="@+id/editTextSubject"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF" >
+                android:textColor="#333333" >
             </EditText>
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="Message : "
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFFFFF" />
+                android:textColor="#333333" />
 
             <EditText
                 android:id="@+id/editTextMessage"
@@ -64,7 +64,7 @@
                 android:gravity="top"
                 android:inputType="textMultiLine"
                 android:lines="5"
-                android:textColor="#FFFFFF" />
+                android:textColor="#333333" />
 
             <Button
                 android:id="@+id/buttonSend"

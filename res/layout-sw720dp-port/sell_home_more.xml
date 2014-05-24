@@ -18,7 +18,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
             android:background="#d84a49"
             android:text="BACK"
@@ -38,7 +38,7 @@
             android:gravity="center"
             android:text=""
             android:textColor="#FFFFFF"
-            android:textSize="30dp"
+            android:textSize="28dp"
             android:textStyle="bold" />
 
         <Button
@@ -48,7 +48,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginBottom="20dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="30dp"
             android:background="#d84a49"
             android:text="LOGOUT"

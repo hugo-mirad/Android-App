@@ -239,10 +239,10 @@ public class PreferenceCarDetailViewFour extends Activity implements
 						boolean isChecked) {
 
 					if (mylist.isChecked()) {
-						mylist.setText("Added to My List");
-						mylist.setTextSize(12);
+						/*mylist.setText("Added to My List");
+						mylist.setTextSize(12);*/
 						Toast.makeText(PreferenceCarDetailViewFour.this,
-								"Car  added into My List", Toast.LENGTH_SHORT)
+								"Car  added into My List", Toast.LENGTH_LONG)
 								.show();
 
 						mylist.setEnabled(false);
@@ -386,14 +386,23 @@ public class PreferenceCarDetailViewFour extends Activity implements
 					phone = jsonobject.getString("_phone");
 				//	System.out.println("this is phone" + phone);
 					email = jsonobject.getString("_email");
-					address = jsonobject.getString("_city").trim()
+					/*address = jsonobject.getString("_city").trim()
 							.replace("Emp", "")
 							+ ","
 							+ " "
 							+ jsonobject.getString("_state").trim()
 									.replace("Emp", "")
 							+ " "
-							+ jsonobject.getString("_zip").replace("Emp", "");
+							+ jsonobject.getString("_zip").replace("Emp", "");*/
+                 if(jsonobject.getString("_city").equals("Emp")){
+						
+						address =jsonobject.getString("_state").trim().replace("Emp", "") + " "
+								+ jsonobject.getString("_zip").replace("Emp", "");
+					}else{
+						address = jsonobject.getString("_city").trim().replace("Emp", "") + "," + " "
+								+ jsonobject.getString("_state").trim().replace("Emp", "") + " "
+								+ jsonobject.getString("_zip").replace("Emp", "");
+					}
 					price1 = jsonobject.getString("_price").trim();
 					make1 = jsonobject.getString("_make").trim();
 					model1 = jsonobject.getString("_model").trim();

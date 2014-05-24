@@ -48,6 +48,7 @@
             android:layout_marginTop="20dp"
             android:background="#d84a49"
             android:text="SAVE"
+             android:textColor="#FFFFFF"
             android:textSize="28dp"
             android:visibility="invisible" />
 

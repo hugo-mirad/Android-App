@@ -77,7 +77,7 @@
                     android:layout_marginTop="15dp"
                     android:text="@string/mylist"
                     android:textColor="#333333"
-                    android:textSize="18dp" />
+                    android:textSize="26sp" />
             </TableRow>
 
             <ScrollView
@@ -394,7 +394,7 @@
                                 android:layout_marginLeft="35dp"
                                 android:maxLength="20"
                                 android:text="@string/Doors"
-                                android:textColor="#FFFFFF"
+                                android:textColor="#333333"
                                 android:textSize="18dp"
                                 android:textStyle="bold" />
 
@@ -658,6 +658,7 @@
 
         <Button
             android:id="@+id/cardetails_back"
+            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/tv_cardetailview_year"

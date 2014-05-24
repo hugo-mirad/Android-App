@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/login_bg"
+    android:background="#ffffff"
     tools:context=".MainActivity" >
 
     <RelativeLayout
@@ -83,7 +83,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
         android:text="@string/nodata"
-        android:textColor="#FFFFFF" />
+        android:textColor="#333333" />
 
     <TextView
         android:id="@+id/textView1"

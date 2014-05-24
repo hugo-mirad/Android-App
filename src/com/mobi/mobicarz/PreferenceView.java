@@ -284,8 +284,12 @@ public class PreferenceView extends Activity implements OnClickListener {
 					TextView input = (TextView) dialog
 							.findViewById(R.id.tv_preferencedialog_input);
 
-					
+					if(preference_oneresult.equals("")){
+						//input.setText(preference_oneresult + "  Cars Found");
+						System.out.println("this is no cars");
+					}else{
 					input.setText(preference_oneresult + "  Cars Found");
+					}
 					// }
 					input.setTextColor(Color.RED);
 					input.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -357,8 +361,11 @@ public class PreferenceView extends Activity implements OnClickListener {
 					TextView input = (TextView) dialog
 							.findViewById(R.id.tv_preferencedialog_input);
 
-				
+				if(preference_tworesult.equals("")){
+					
+				}else{
 					input.setText(preference_tworesult + "  Cars Found");
+				}
 					// }
 					input.setTextColor(Color.RED);
 					input.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -493,8 +500,11 @@ public class PreferenceView extends Activity implements OnClickListener {
 					TextView input = (TextView) dialog
 							.findViewById(R.id.tv_preferencedialog_input);
 
-					
+					if(preference_threeresult.equals("")){
+						
+					}else{
 					input.setText(preference_threeresult + "  Cars Found");
+					}
 					// }
 					input.setTextColor(Color.RED);
 					input.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -566,8 +576,11 @@ public class PreferenceView extends Activity implements OnClickListener {
 					TextView input = (TextView) dialog
 							.findViewById(R.id.tv_preferencedialog_input);
 
-					
+                   if(preference_fourresult.equals("")){
+						
+					}else{
 					input.setText(preference_fourresult + "  Cars Found");
+					}
 					// }
 					input.setTextColor(Color.RED);
 					input.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -639,8 +652,11 @@ public class PreferenceView extends Activity implements OnClickListener {
 					dialog.setTitle("Preference 5");
 					TextView input = (TextView) dialog
 							.findViewById(R.id.tv_preferencedialog_input);
-
+					if(preference_fiveresult.equals("")){
+					}else{
+					
 					input.setText(preference_fiveresult + "  Cars Found");
+					}
 					// }
 					input.setTextColor(Color.RED);
 					input.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -701,7 +717,7 @@ public class PreferenceView extends Activity implements OnClickListener {
 		JSONObject json = jParser.getJSONFromUrl(url);
 		//System.out.println("this is url" + url);
 		try {
-			MakeListObj = json.getJSONArray("GetMakesResult");
+			MakeListObj = json.getJSONArray("GetMakesResult");//.getJSONArray("GetMakesResult");
 			MakeList_array = new String[MakeListObj.length()];
 
 			MakeObjects modelCarObjects = null;

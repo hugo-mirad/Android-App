@@ -26,7 +26,7 @@
         android:layout_alignBaseline="@+id/tv_contact"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_contact"
-        android:text="888-786-8307"
+        android:text="888-465-6693"
         android:textColor="#d84a49"
         android:textSize="30px" />
 
@@ -108,8 +108,8 @@
 
         <TextView
             android:id="@+id/tv_about_home"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="16dp"
@@ -121,9 +121,10 @@
             android:id="@+id/textView1_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/tv_about_home"
-            android:layout_alignBottom="@+id/tv_about_home"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_centerHorizontal="true"
+            android:gravity="center"
             android:text=""
             android:layout_marginTop="20dp"
             android:textColor="#FFFFFF"

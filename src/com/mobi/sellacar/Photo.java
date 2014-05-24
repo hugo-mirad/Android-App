@@ -113,6 +113,7 @@ public class Photo extends Activity{
 	public class MyTask extends AsyncTask<String, Integer, String> {
 		protected String doInBackground(String... arg0) {
 		
+			
 			String SOAP_ACTION = "http://tempuri.org/UploadPictureByCarIDFromAndroid";
 			String METHOD_NAME = "UploadPictureByCarIDFromAndroid";
 			String NAMESPACE = "http://tempuri.org/";
@@ -256,6 +257,10 @@ public class Photo extends Activity{
 			Bitmap image = (Bitmap) data.getExtras().get("data");
 			// ImageView imageview = (ImageView) findViewById(R.id.ImageView01);
 			img_photo.setImageBitmap(image);
+		} else{
+			Toast.makeText(getApplicationContext(), "Please select image", Toast.LENGTH_LONG).show();
+			Intent in=new Intent(getApplicationContext(),Vehiclephotos_Upload.class);
+			startActivity(in);
 		}
 	}
 	

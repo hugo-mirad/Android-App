@@ -102,7 +102,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="25dp"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/arrow_left_enabled" />
+        android:src="@drawable/arrow_left_disabled" />
 
     <ImageView
         android:id="@+id/right_arrow_imageview"
@@ -111,7 +111,7 @@
         android:layout_alignRight="@+id/btn_vehiclephoto_upload"
         android:layout_alignTop="@+id/left_arrow_imageview"
         android:layout_marginRight="20dp"
-        android:src="@drawable/arrow_right_disabled" />
+        android:src="@drawable/arrow_right_enabled" />
 
     <TextView
         android:id="@+id/photo_totalimages"

@@ -100,16 +100,16 @@
                     android:layout_marginLeft="120dp"
                     android:text="Name:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/et_reg_name"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="40dp"
                     android:textColor="#333333"
-                    android:textSize="30dp" >
+                    android:textSize="28sp" >
                 </TextView>
             </TableRow>
 
@@ -125,18 +125,18 @@
                     android:layout_marginLeft="120dp"
                     android:text="Company Name:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_reg_companyname"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="40dp"
                     android:focusable="false"
                     android:maxLength="20"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -152,7 +152,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="Phone:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -163,7 +163,7 @@
                     android:inputType="phone"
                     android:maxLength="10"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -179,7 +179,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="Alt Phone:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -192,7 +192,7 @@
                     android:inputType="phone"
                     android:maxLength="10"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -207,17 +207,17 @@
                     android:layout_marginLeft="120dp"
                     android:text="Email ID:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/et_reg_emailid"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="40dp"
                     android:inputType="textEmailAddress"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -233,7 +233,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="Alt Email ID:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -245,7 +245,7 @@
                     android:inputType="textEmailAddress"
                     android:maxLength="25"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -260,17 +260,17 @@
                     android:layout_marginLeft="120dp"
                     android:text="Address:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_reg_address"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="40dp"
                     android:focusable="false"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -285,17 +285,17 @@
                     android:layout_marginLeft="120dp"
                     android:text="City:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_reg_city"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="40dp"
                     android:focusable="false"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -310,7 +310,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="Zip code:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -323,7 +323,7 @@
                     android:inputType="phone"
                     android:maxLength="5"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -338,7 +338,7 @@
                     android:layout_marginLeft="120dp"
                     android:text="State Name:"
                     android:textColor="#333333"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -348,7 +348,7 @@
                     android:layout_marginLeft="40dp"
                     android:text="State"
                     android:textColor="#333333"
-                    android:textSize="30dp" />
+                    android:textSize="28sp" />
 
                 <Spinner
                     android:id="@+id/sp_reg_state"
@@ -372,7 +372,7 @@
         android:layout_marginTop="15dp"
         android:text="Note:Please contact customer support to change Name,Phone and Email."
         android:textColor="#333333"
-        android:textSize="20dp"
+        android:textSize="24dp"
         android:textStyle="italic" />
 
 </RelativeLayout>

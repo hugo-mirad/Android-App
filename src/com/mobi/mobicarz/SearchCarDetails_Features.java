@@ -68,13 +68,18 @@ public class SearchCarDetails_Features extends Activity {
 		if (isOnline()) {
 			//System.out.println("this is features view");
 			setContentView(R.layout.cardetails_features);
-			features_carid = CarDetailView.car_id;
+			features_carid = SearchCarDetailsView.car_id;
 			back = (Button) findViewById(R.id.carfeatures_button1);
 			btn_car = (Button) findViewById(R.id.car);
 			btn_mylist = (Button) findViewById(R.id.mylist);
 			btn_preferencs = (Button) findViewById(R.id.preference);
 			btn_search = (Button) findViewById(R.id.search);
 			btn_search.setBackgroundResource(R.drawable.search_act);
+			TextView tv_show_content=(TextView)findViewById(R.id.show_content);
+			String year=SearchCarDetailsView.year1;
+			String make=SearchCarDetailsView.make1;
+			String model=SearchCarDetailsView.model1;
+			tv_show_content.setText(year+" "+make+" "+model);
 
 			back.setOnClickListener(new OnClickListener() {
 

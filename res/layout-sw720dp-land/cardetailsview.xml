@@ -76,8 +76,8 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="15dp"
                     android:text="@string/mylist"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22dp" />
+                    android:textColor="#333333"
+                    android:textSize="28sp" />
             </TableRow>
 
             <ScrollView
@@ -649,7 +649,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text=""
             android:textColor="#FFFFFF"

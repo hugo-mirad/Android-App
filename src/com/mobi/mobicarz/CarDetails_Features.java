@@ -60,6 +60,7 @@ public class CarDetails_Features extends Activity {
 			features_specials;
 	String res, seats, safety, sound, new1, windows, others, specials, url;
 	LinearLayout ll_features;
+	TextView tv_show_content;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,11 @@ public class CarDetails_Features extends Activity {
 			btn_mylist = (Button) findViewById(R.id.mylist);
 			btn_preferencs = (Button) findViewById(R.id.preference);
 			btn_search = (Button) findViewById(R.id.search);
+			tv_show_content=(TextView)findViewById(R.id.show_content);
+			String year=CarDetailView.year1;
+			String make=CarDetailView.make1;
+			String model=CarDetailView.model1;
+			tv_show_content.setText(year+" "+make+" "+model);
 
 			btn_car.setBackgroundResource(R.drawable.popular_act);
 			back.setOnClickListener(new OnClickListener() {

@@ -75,6 +75,11 @@ public class MyListCarDetails_Features extends Activity {
 			btn_preferencs = (Button) findViewById(R.id.preference);
 			btn_search = (Button) findViewById(R.id.search);
 			btn_mylist.setBackgroundResource(R.drawable.my_list_act);
+			 TextView tv_show_content=(TextView)findViewById(R.id.show_content);
+			String year=CarDetailView.year1;
+			String make=CarDetailView.make1;
+			String model=CarDetailView.model1;
+			tv_show_content.setText(year+" "+make+" "+model);
 
 			back.setOnClickListener(new OnClickListener() {
 

@@ -180,20 +180,28 @@ public class MyListGalleryCars extends Activity{
 				if (selectedImagePosition > 0
 						&& selectedImagePosition < mystringArray.size() - 1) {
 
-					leftArrowImageView.setImageDrawable(getResources()
+					/*leftArrowImageView.setImageDrawable(getResources()
 							.getDrawable(R.drawable.arrow_left_disabled));
 					rightArrowImageView.setImageDrawable(getResources()
-							.getDrawable(R.drawable.arrow_right_disabled));
+							.getDrawable(R.drawable.arrow_right_disabled));*/
+					leftArrowImageView.setImageDrawable(getResources()
+							.getDrawable(R.drawable.arrow_left_enabled));
+					rightArrowImageView.setImageDrawable(getResources()
+							.getDrawable(R.drawable.arrow_right_enabled));
 
 				} else if (selectedImagePosition == 0) {
 
+					/*leftArrowImageView.setImageDrawable(getResources()
+							.getDrawable(R.drawable.arrow_left_enabled));*/
 					leftArrowImageView.setImageDrawable(getResources()
-							.getDrawable(R.drawable.arrow_left_enabled));
+							.getDrawable(R.drawable.arrow_left_disabled));
 
 				} else if (selectedImagePosition == mystringArray.size() - 1) {
 
+					/*rightArrowImageView.setImageDrawable(getResources()
+							.getDrawable(R.drawable.arrow_right_enabled));*/
 					rightArrowImageView.setImageDrawable(getResources()
-							.getDrawable(R.drawable.arrow_right_enabled));
+							.getDrawable(R.drawable.arrow_right_disabled));
 				}
 				
 				

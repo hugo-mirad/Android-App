@@ -70,7 +70,7 @@ public class Customer_Support extends Activity {
 					// TODO Auto-generated method stub
 					try {
 						Intent callIntent = new Intent(Intent.ACTION_CALL);
-						callIntent.setData(Uri.parse("tel:8887868307"));
+						callIntent.setData(Uri.parse("tel:8884656693"));
 						//System.out.println("this is calling");
 						startActivity(callIntent);
 					} catch (ActivityNotFoundException activityException) {

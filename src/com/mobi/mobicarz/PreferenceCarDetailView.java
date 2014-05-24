@@ -119,10 +119,10 @@ public class PreferenceCarDetailView extends Activity implements
 	public ArrayList<String> carGallerList = new ArrayList<String>();
 	String imageURL, email, address, bodystyle, exteriorcolor1, interiorcolor1,
 			doors, vehiclecondition, mileage, fuel1, engine, transmission,
-			drivetrain, vin1, description, price1 ;
+			drivetrain, vin1, description, price1;
 	public static String make1, model1, year1;
-	String PIC2, PIC3, PIC4, PIC5, PIC6, PIC7, PIC8, PIC9, PIC10,PIC11, PIC12,
-	PIC13, PIC14, PIC15, PIC16, PIC17, PIC18, PIC19, PIC20;
+	String PIC2, PIC3, PIC4, PIC5, PIC6, PIC7, PIC8, PIC9, PIC10, PIC11, PIC12,
+			PIC13, PIC14, PIC15, PIC16, PIC17, PIC18, PIC19, PIC20;
 	byte[] bytes = null;
 	byte[] bytes1 = null;
 	private static final String TAG_GETCARFEATURES = "GetCarFeaturesResult";
@@ -142,10 +142,10 @@ public class PreferenceCarDetailView extends Activity implements
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		if (isOnline()) {
-			//System.out.println("this is car detail view");
+			// System.out.println("this is car detail view");
 			car_id = getIntent().getStringExtra("CAR_ID");
 			carid = getIntent().getStringExtra("CAR_ID");
-			//System.out.println("cars id" + car_id);
+			// System.out.println("cars id" + car_id);
 			setContentView(R.layout.cardetailsview);
 			helpers = new com.mobi.adapters.MySQLiteHelper(
 					getApplicationContext());
@@ -153,7 +153,7 @@ public class PreferenceCarDetailView extends Activity implements
 			cursors = helpers.getCarList();
 			cursors.moveToFirst();
 			if (cursors.getCount() == 0) {
-			//	System.out.println("No data ADDED");
+				// System.out.println("No data ADDED");
 
 			} else if (cursors.getCount() > 0) {
 				do {
@@ -162,7 +162,7 @@ public class PreferenceCarDetailView extends Activity implements
 							.add(cursors.getString(cursors
 									.getColumnIndex(com.mobi.adapters.MySQLiteHelper.CID)));
 
-					//System.out.println("mani" + carIDlist);
+					// System.out.println("mani" + carIDlist);
 				} while (cursors.moveToNext());
 			}
 
@@ -226,7 +226,7 @@ public class PreferenceCarDetailView extends Activity implements
 			call.setOnClickListener(this);
 
 			isStringExists = carIDlist.contains(carid);
-		//	System.out.println("carlist" + isStringExists);
+			// System.out.println("carlist" + isStringExists);
 			if (isStringExists == true) {
 				mylist.setEnabled(false);
 				mylist.setChecked(true);
@@ -238,10 +238,12 @@ public class PreferenceCarDetailView extends Activity implements
 						boolean isChecked) {
 
 					if (mylist.isChecked()) {
-						mylist.setText("Added to My List");
-						mylist.setTextSize(12);
+						/*
+						 * mylist.setText("Added to My List");
+						 * mylist.setTextSize(12);
+						 */
 						Toast.makeText(PreferenceCarDetailView.this,
-								"Car  added into My List", Toast.LENGTH_SHORT)
+								"Car  added into My List", Toast.LENGTH_LONG)
 								.show();
 
 						mylist.setEnabled(false);
@@ -275,11 +277,12 @@ public class PreferenceCarDetailView extends Activity implements
 							contentValues.put(
 									com.mobi.adapters.MySQLiteHelper.YEAR, Year
 											.getText().toString());
-							contentValues.put(
-									com.mobi.adapters.MySQLiteHelper.IMG, bytes);
-							//System.out.println("my list image" + imageURL);
+							contentValues
+									.put(com.mobi.adapters.MySQLiteHelper.IMG,
+											bytes);
+							// System.out.println("my list image" + imageURL);
 						} else {
-						//	System.out.println("sock");
+							// System.out.println("sock");
 							String StockMake = Make.getText().toString();
 							StockMake = StockMake.replace(" ", "-");
 							String StockModel = Model.getText().toString();
@@ -315,10 +318,10 @@ public class PreferenceCarDetailView extends Activity implements
 							contentValues.put(
 									com.mobi.adapters.MySQLiteHelper.CID,
 									getIntent().getStringExtra("CAR_ID"));
-							contentValues
-									.put(com.mobi.adapters.MySQLiteHelper.IMG,
-											bytes1);
-							//System.out.println("sock" + imageURL);
+							contentValues.put(
+									com.mobi.adapters.MySQLiteHelper.IMG,
+									bytes1);
+							// System.out.println("sock" + imageURL);
 						}
 
 						long res = helper.inserDetails(contentValues);
@@ -365,7 +368,7 @@ public class PreferenceCarDetailView extends Activity implements
 				+ "/";
 		JSONParser jParser = new JSONParser();
 		JSONObject json = jParser.getJSONFromUrl(url);
-		//System.out.println("this is url" + url);
+		// System.out.println("this is url" + url);
 		try {
 			// Getting Array of Contacts
 			contacts = json.getJSONArray("FindCarIDResult");
@@ -373,22 +376,44 @@ public class PreferenceCarDetailView extends Activity implements
 				for (int i = 0; i < contacts.length(); i++) {
 					jsonobject = contacts.getJSONObject(i);
 					imageURL = domainName
-							+ jsonobject.getString("_PICLOC1").replace(" ", "%20")
-							.replace("Emp", "")
+							+ jsonobject.getString("_PICLOC1")
+									.replace(" ", "%20").replace("Emp", "")
 							+ jsonobject.getString("_PIC0").replace(" ", "%20")
 									.replace("Emp", "");
 					// .replace("Emp", "");
-					//System.out.println("this is imageurl" + imageURL);
+					// System.out.println("this is imageurl" + imageURL);
 					ImageLoaders imageLoader = new ImageLoaders(
 							getApplicationContext());
 					imageLoader.displayImage(imageURL, imageView);
 					phone = jsonobject.getString("_phone");
-				//	System.out.println("this is phone" + phone);
+					// System.out.println("this is phone" + phone);
 					email = jsonobject.getString("_email");
 
-					address = jsonobject.getString("_city").trim().replace("Emp", "") + "," + " "
-							+ jsonobject.getString("_state").trim().replace("Emp", "") + " "
-							+ jsonobject.getString("_zip").replace("Emp", "");
+					/*
+					 * address =
+					 * jsonobject.getString("_city").trim().replace("Emp", "") +
+					 * "," + " " +
+					 * jsonobject.getString("_state").trim().replace("Emp", "")
+					 * + " " + jsonobject.getString("_zip").replace("Emp", "");
+					 */
+					if (jsonobject.getString("_city").equals("Emp")) {
+
+						address = jsonobject.getString("_state").trim()
+								.replace("Emp", "")
+								+ " "
+								+ jsonobject.getString("_zip").replace("Emp",
+										"");
+					} else {
+						address = jsonobject.getString("_city").trim()
+								.replace("Emp", "")
+								+ ","
+								+ " "
+								+ jsonobject.getString("_state").trim()
+										.replace("Emp", "")
+								+ " "
+								+ jsonobject.getString("_zip").replace("Emp",
+										"");
+					}
 					price1 = jsonobject.getString("_price").trim();
 					make1 = jsonobject.getString("_make").trim();
 					model1 = jsonobject.getString("_model").trim();
@@ -402,11 +427,11 @@ public class PreferenceCarDetailView extends Activity implements
 					mileage = jsonobject.getString("_mileage");
 					fuel1 = jsonobject.getString("_Fueltype");
 					transmission = jsonobject.getString("_Transmission");
-					engine=jsonobject.getString("_numberOfCylinder");
+					engine = jsonobject.getString("_numberOfCylinder");
 					drivetrain = jsonobject.getString("_DriveTrain");
 					vin1 = jsonobject.getString("_VIN");
 					description = jsonobject.getString("_description");
-					
+
 					carInfo.setPIC1(domainName
 							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC1").replace(" ", "%20")
@@ -443,25 +468,35 @@ public class PreferenceCarDetailView extends Activity implements
 					carInfo.setPIC10(domainName
 							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC10"));
-					carInfo.setPIC11(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC11(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC11"));
-					carInfo.setPIC12(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC12(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC12"));
-					carInfo.setPIC13(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC13(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC13"));
-					carInfo.setPIC14(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC14(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC14"));
-					carInfo.setPIC15(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC15(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC15"));
-					carInfo.setPIC16(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC16(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC16"));
-					carInfo.setPIC17(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC17(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC17"));
-					carInfo.setPIC18(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC18(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC18"));
-					carInfo.setPIC19(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC19(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC19"));
-					carInfo.setPIC20(domainName + jsonobject.getString("_PICLOC1")
+					carInfo.setPIC20(domainName
+							+ jsonobject.getString("_PICLOC1")
 							+ jsonobject.getString("_PIC20"));
 
 					NumberFormat format = NumberFormat.getCurrencyInstance();
@@ -485,7 +520,7 @@ public class PreferenceCarDetailView extends Activity implements
 					Make.setText(make1);
 					Model.setText(model1);
 					Year.setText(year1);
-					tv_year.setText(year1 +" "+ make1 +" " +model1);
+					tv_year.setText(year1 + " " + make1 + " " + model1);
 					Bodystyle.setText(bodystyle);
 					exteriorcolor.setText(exteriorcolor1);
 					interiorcolor.setText(interiorcolor1);
@@ -514,7 +549,7 @@ public class PreferenceCarDetailView extends Activity implements
 						} else {
 							carGallerList.add(carInfo.getPIC1());
 						}
-						
+
 						if (jsonobject.getString("_PIC2").equalsIgnoreCase(
 								"Emp")) {
 							break;
@@ -722,14 +757,12 @@ public class PreferenceCarDetailView extends Activity implements
 			getApplicationContext().startActivity(callIntent);
 			break;
 		case R.id.cardetails_features:
-		//	System.out.println("this is clicking features button");
+			// System.out.println("this is clicking features button");
+			System.out.println("this is featur id in prefe" + car_id);
 			String feature_url = "http://www.unitedcarexchange.com/MobileService/ServiceMobile.svc/GetCarFeatures/"
-					+carid
-					//+ getIntent().getStringExtra("CAR_ID")
-					+ "/"
-					+ aid
-					+ "/"
-					+ uid + "/";
+					+ carid
+					// + getIntent().getStringExtra("CAR_ID")
+					+ "/" + aid + "/" + uid + "/";
 			ArrayList<HashMap<String, String>> contactList = new ArrayList<HashMap<String, String>>();
 
 			// Creating JSON Parser instance
@@ -763,7 +796,7 @@ public class PreferenceCarDetailView extends Activity implements
 		case R.id.viewgallery:
 			if (carGallerList.size() > 0) {
 				int i = carGallerList.size();
-			//	System.out.println("this is no of cars" + i);
+				// System.out.println("this is no of cars" + i);
 
 				Intent previewMessage = new Intent(getApplicationContext(),
 						PreferenceGalleryCars.class)

@@ -188,6 +188,8 @@ public class SearchResultView extends Activity implements OnClickListener {
 				Toast.makeText(getApplicationContext(),
 						"No Records,Search again", Toast.LENGTH_SHORT).show();
 				// finish();
+				Intent in=new Intent(getApplicationContext(),SearchView.class);
+				startActivity(in);
 			}
 			for (int i = 0; i < contacts.length(); i++) {
 				JSONObject c = contacts.getJSONObject(i);

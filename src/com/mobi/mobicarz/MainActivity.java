@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 	GridView list;
 	final String domainName = "http://www.unitedcarexchange.com/";
 	com.mobi.adapters.LazyAdapter adapter;
-	public ArrayList<CarInfo> carMainList = new ArrayList<CarInfo>();
+	public ArrayList<CarInfo> carMainList= new ArrayList<CarInfo>();
 	int mPrevTotalItemCount = 0;
 	static int pageNo = 1;
 	static int MAX_PAGE = 45;
@@ -246,9 +246,13 @@ public class MainActivity extends Activity {
 				list.setAdapter(adapter);
 			} else {
 				// searchLoadData();
+				/*if(carMainList.size()==0){
+					Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+				}else{*/
 				adapter = new com.mobi.adapters.LazyAdapter(MainActivity.this,
 						carMainList);
 				list.setAdapter(adapter);
+				//}
 			}
 			
 
@@ -677,9 +681,13 @@ public class MainActivity extends Activity {
 		MyAsy asy1 = new MyAsy();
 		asy1.execute(url.replace(" ", "%20"));
 		carMainList.clear();
+		/*if(carMainList.size()==0){
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+		}else{*/
 		adapter = new com.mobi.adapters.LazyAdapter(MainActivity.this,
 				carMainList);
 		list.setAdapter(adapter);
+		//}
 		list.setOnScrollListener(new OnScrollListener() {
 			@Override
 			public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -822,6 +830,8 @@ public class MainActivity extends Activity {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
+			}catch(NullPointerException e){
+				e.printStackTrace();
 			}
 			MyHandler myHandler = null;
 			SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -840,8 +850,12 @@ public class MainActivity extends Activity {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			}catch (NullPointerException e) {
+				// TODO: handle exception
+				Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
 			}
 			return myHandler.carList;
+			//return null;
 		}
 	}
 	public void updateUIlocation(Location location){

@@ -88,7 +88,7 @@
         android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/sellcardetails_viewgallery"
@@ -96,6 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardetailimage_id"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_def_big"
         android:text="GALLERY"
         android:textColor="#d84a49"
@@ -108,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/tv_note"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/sellcardetails_viewgallery"
         android:background="@drawable/btn_def_big"
         android:text="FEATURES"

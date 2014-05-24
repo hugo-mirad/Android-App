@@ -119,8 +119,8 @@ public class MultisiteListing extends Activity {
 								Seller_Login.class);
 						startActivity(in);
 					}else if(AASuccess.equals("Failure")){
-						//Toast.makeText(getApplicationContext(), "They are no ads for this car",Toast.LENGTH_LONG).show();
-						//finish();
+						Toast.makeText(getApplicationContext(), "They are no ads for this car",Toast.LENGTH_LONG).show();
+						finish();
 					}
 					else {
 						/* AASuccess=c.getString(TAG_AASuccess); */

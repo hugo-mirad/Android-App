@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="#EDEDED"
     android:orientation="vertical" >
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="150dp"
         android:text="Make*:"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp"
         android:textStyle="bold" />
 
@@ -22,7 +22,6 @@
         android:id="@+id/sp_addacar_make"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        
         android:layout_alignTop="@+id/textView1"
         android:layout_marginLeft="240dp" />
 
@@ -34,7 +33,7 @@
         android:layout_below="@+id/sp_addacar_make"
         android:layout_marginTop="30dp"
         android:text="Model*:"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp"
         android:textStyle="bold" />
 
@@ -44,8 +43,8 @@
         android:layout_height="70dp"
         android:layout_alignLeft="@+id/sp_addacar_make"
         android:layout_alignTop="@+id/textView2" />
-    
-     <TextView
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +52,7 @@
         android:layout_below="@+id/spin2"
         android:layout_marginTop="30dp"
         android:text="Year*:"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp"
         android:textStyle="bold" />
 
@@ -63,7 +62,7 @@
         android:layout_height="70dp"
         android:layout_alignLeft="@+id/spin2"
         android:layout_alignTop="@+id/textView3" />
-    
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -72,10 +71,11 @@
         android:layout_below="@+id/sp_year"
         android:layout_marginTop="30dp"
         android:text="Price:"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp"
         android:textStyle="bold" />
-     <EditText
+
+    <EditText
         android:id="@+id/et_price"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
@@ -83,10 +83,11 @@
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignLeft="@+id/sp_year"
         android:ems="10"
-         android:textSize="28dp"
         android:inputType="number"
-        android:textColor="#000000" />
-     <TextView
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,10 +95,11 @@
         android:layout_below="@+id/et_price"
         android:layout_marginTop="30dp"
         android:text="Mileage:"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp"
         android:textStyle="bold" />
-     <EditText
+
+    <EditText
         android:id="@+id/et_mileage"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
@@ -105,123 +107,51 @@
         android:layout_alignBottom="@+id/textView5"
         android:layout_alignLeft="@+id/et_price"
         android:ems="10"
-         android:textSize="28dp"
         android:inputType="number"
-        android:textColor="#000000" />
-    
-     
-      <RelativeLayout
-            android:id="@+id/relativeLayout2"
-            android:layout_width="fill_parent"
+        android:textColor="#333333"
+        android:textSize="28dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#d84a49" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#444" >
-     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="Add  A New Car"
-        android:textColor="#FFFFFF"
-        android:textSize="36dp"
-        android:textStyle="bold" />
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Add  A New Car"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_addacar_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/back_big"/>
+        <Button
+            android:id="@+id/btn_addacar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
 
-     <Button
-         android:id="@+id/btn_add_submit"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignBaseline="@+id/textView7"
-         android:layout_alignBottom="@+id/textView7"
-         android:layout_alignParentRight="true"
-         android:layout_marginRight="33dp"
-         android:text="ADD"
-         android:textSize="22dp" />
- 
-        </RelativeLayout>
-    
-
-    <!-- <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/spin2"
-        android:layout_marginTop="30dp"
-        android:text="Price:"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/et_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/spin2"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="#000000" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/et_price"
-        android:layout_marginTop="30dp"
-        android:text="Year:"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:text="Add  A New Car"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btn_addacar_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="21dp"
-        android:background="@drawable/back1"/>
-
-    <Spinner
-        android:id="@+id/sp_year"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_alignLeft="@+id/et_price"
-        android:layout_alignTop="@+id/textView4"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="#000000" />
-
-    <Button
-        android:id="@+id/btn_add_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sp_year"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:text="Submit" /> -->
+        <Button
+            android:id="@+id/btn_add_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#d84a49"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+    </RelativeLayout>
 
 </RelativeLayout>

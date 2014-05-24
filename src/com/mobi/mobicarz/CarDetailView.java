@@ -143,10 +143,10 @@ public class CarDetailView extends Activity implements
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		if (isOnline()) {
-			//System.out.println("this is car detail view");
+			// System.out.println("this is car detail view");
 			car_id = getIntent().getStringExtra("CAR_ID");
 			carid = getIntent().getStringExtra("CAR_ID");
-		//	System.out.println("cars id" + car_id);
+			// System.out.println("cars id" + car_id);
 			setContentView(R.layout.cardetailsview);
 			helpers = new com.mobi.adapters.MySQLiteHelper(
 					getApplicationContext());
@@ -154,7 +154,7 @@ public class CarDetailView extends Activity implements
 			cursors = helpers.getCarList();
 			cursors.moveToFirst();
 			if (cursors.getCount() == 0) {
-				//System.out.println("No data ADDED");
+				// System.out.println("No data ADDED");
 
 			} else if (cursors.getCount() > 0) {
 				do {
@@ -163,7 +163,7 @@ public class CarDetailView extends Activity implements
 							.add(cursors.getString(cursors
 									.getColumnIndex(com.mobi.adapters.MySQLiteHelper.CID)));
 
-					//System.out.println("mani" + carIDlist);
+					// System.out.println("mani" + carIDlist);
 				} while (cursors.moveToNext());
 			}
 
@@ -228,7 +228,7 @@ public class CarDetailView extends Activity implements
 			call.setOnClickListener(this);
 
 			isStringExists = carIDlist.contains(carid);
-		//	System.out.println("carlist" + isStringExists);
+			// System.out.println("carlist" + isStringExists);
 			if (isStringExists == true) {
 				mylist.setEnabled(false);
 				mylist.setChecked(true);
@@ -240,10 +240,10 @@ public class CarDetailView extends Activity implements
 						boolean isChecked) {
 
 					if (mylist.isChecked()) {
-						mylist.setText("Added to My List");
-						mylist.setTextSize(12);
+						// mylist.setText("Added to My List");
+						// mylist.setTextSize(12);
 						Toast.makeText(CarDetailView.this,
-								"Car  added into My List", Toast.LENGTH_SHORT)
+								"Car  added into My List", Toast.LENGTH_LONG)
 								.show();
 
 						mylist.setEnabled(false);
@@ -277,11 +277,12 @@ public class CarDetailView extends Activity implements
 							contentValues.put(
 									com.mobi.adapters.MySQLiteHelper.YEAR, Year
 											.getText().toString());
-							contentValues.put(
-									com.mobi.adapters.MySQLiteHelper.IMG, bytes);
-						//	System.out.println("my list image" + imageURL);
+							contentValues
+									.put(com.mobi.adapters.MySQLiteHelper.IMG,
+											bytes);
+							// System.out.println("my list image" + imageURL);
 						} else {
-						//	System.out.println("sock");
+							// System.out.println("sock");
 							String StockMake = Make.getText().toString();
 							StockMake = StockMake.replace(" ", "-");
 							String StockModel = Model.getText().toString();
@@ -317,10 +318,10 @@ public class CarDetailView extends Activity implements
 							contentValues.put(
 									com.mobi.adapters.MySQLiteHelper.CID,
 									getIntent().getStringExtra("CAR_ID"));
-							contentValues
-									.put(com.mobi.adapters.MySQLiteHelper.IMG,
-											bytes1);
-							//System.out.println("sock" + imageURL);
+							contentValues.put(
+									com.mobi.adapters.MySQLiteHelper.IMG,
+									bytes1);
+							// System.out.println("sock" + imageURL);
 						}
 
 						long res = helper.inserDetails(contentValues);
@@ -367,7 +368,7 @@ public class CarDetailView extends Activity implements
 				+ "/";
 		JSONParser jParser = new JSONParser();
 		JSONObject json = jParser.getJSONFromUrl(url);
-		//System.out.println("this is url" + url);
+		// System.out.println("this is url" + url);
 		try {
 			// Getting Array of Contacts
 			contacts = json.getJSONArray("FindCarIDResult");
@@ -379,17 +380,32 @@ public class CarDetailView extends Activity implements
 							+ jsonobject.getString("_PIC0").replace(" ", "%20")
 									.replace("Emp", "");
 					// .replace("Emp", "");
-				//	System.out.println("this is imageurl" + imageURL);
+					// System.out.println("this is imageurl" + imageURL);
 					ImageLoaders imageLoader = new ImageLoaders(
 							getApplicationContext());
 					imageLoader.displayImage(imageURL, imageView);
 					phone = jsonobject.getString("_phone");
-				//	System.out.println("this is phone" + phone);
+					// System.out.println("this is phone" + phone);
 					email = jsonobject.getString("_email");
 
-					address = jsonobject.getString("_city").trim().replace("Emp", "") + "," + " "
-							+ jsonobject.getString("_state").trim().replace("Emp", "") + " "
-							+ jsonobject.getString("_zip").replace("Emp", "");
+					if (jsonobject.getString("_city").equals("Emp")) {
+
+						address = jsonobject.getString("_state").trim()
+								.replace("Emp", "")
+								+ " "
+								+ jsonobject.getString("_zip").replace("Emp",
+										"");
+					} else {
+						address = jsonobject.getString("_city").trim()
+								.replace("Emp", "")
+								+ ","
+								+ " "
+								+ jsonobject.getString("_state").trim()
+										.replace("Emp", "")
+								+ " "
+								+ jsonobject.getString("_zip").replace("Emp",
+										"");
+					}
 					price1 = jsonobject.getString("_price").trim();
 					make1 = jsonobject.getString("_make").trim();
 					model1 = jsonobject.getString("_model").trim();
@@ -519,15 +535,14 @@ public class CarDetailView extends Activity implements
 						Description.setText(description);
 					}
 					for (int j = 0; j <= 20; j++) {
-						
-						
+
 						if (jsonobject.getString("_PIC1").equalsIgnoreCase(
 								"Emp")) {
 							break;
 						} else {
 							carGallerList.add(carInfo.getPIC1());
 						}
-						
+
 						if (jsonobject.getString("_PIC2").equalsIgnoreCase(
 								"Emp")) {
 							break;
@@ -735,15 +750,17 @@ public class CarDetailView extends Activity implements
 			getApplicationContext().startActivity(callIntent);
 			break;
 		case R.id.cardetails_features:
-		//	System.out.println("this is clicking features button");
+			// System.out.println("this is clicking features button");
 			String feature_url = "http://www.unitedcarexchange.com/MobileService/ServiceMobile.svc/GetCarFeatures/"
 					+ getIntent().getStringExtra("CAR_ID")
 					+ "/"
 					+ aid
 					+ "/"
 					+ uid + "/";
-		/*	System.out.println("this is cardetailsview feature url"
-					+ feature_url);*/
+			/*
+			 * System.out.println("this is cardetailsview feature url" +
+			 * feature_url);
+			 */
 			ArrayList<HashMap<String, String>> contactList = new ArrayList<HashMap<String, String>>();
 
 			// Creating JSON Parser instance
@@ -759,12 +776,16 @@ public class CarDetailView extends Activity implements
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} catch (NullPointerException e) {
+				Toast.makeText(getApplicationContext(), "Network error",
+						Toast.LENGTH_LONG).show();
 			}
 			if (contacts1.length() == 0) {
-				/*System.out.println("this is so array lemgth"
-						+ contacts.length());
-*/				Toast.makeText(CarDetailView.this, "No Features for this car",
-						Toast.LENGTH_SHORT).show();
+				/*
+				 * System.out.println("this is so array lemgth" +
+				 * contacts.length());
+				 */Toast.makeText(CarDetailView.this,
+						"No Features for this car", Toast.LENGTH_SHORT).show();
 			} else {
 
 				Intent features_in = new Intent(getApplicationContext(),
@@ -773,13 +794,12 @@ public class CarDetailView extends Activity implements
 
 				startActivity(features_in);
 
-				
 			}
 			break;
 		case R.id.viewgallery:
 			if (carGallerList.size() > 0) {
 				int i = carGallerList.size();
-				//System.out.println("this is no of cars" + i);
+				// System.out.println("this is no of cars" + i);
 
 				Intent previewMessage = new Intent(getApplicationContext(),
 						GalleryCars.class)

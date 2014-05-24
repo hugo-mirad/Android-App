@@ -76,7 +76,7 @@
         android:layout_alignBaseline="@+id/tv_contact"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_contact"
-        android:text="888-786-8307"
+        android:text="888-465-6693"
         android:textColor="#d84a49"
         android:textSize="18px" />
 

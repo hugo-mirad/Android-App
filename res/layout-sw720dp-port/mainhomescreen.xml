@@ -11,30 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="54dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="160dp"
         android:background="@drawable/info" />
 
     <Button
-        android:id="@+id/btn_home_findacar"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-       android:background="@drawable/btn"
-        android:text="Find A Car"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp" />
-
-    <Button
         android:id="@+id/btn_home_login"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="60dp"
         android:layout_alignLeft="@+id/btn_home_findacar"
         android:layout_below="@+id/btn_home_findacar"
         android:layout_marginTop="28dp"
-        android:background="@drawable/loginbtn" />
-     <!-- <RelativeLayout
+        android:background="@drawable/btn_def_big"
+        android:text="LOGIN"
+        android:textColor="#d84a49"
+        android:textSize="36sp" />
+    <!--
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -50,6 +43,27 @@
             android:textColor="#FFFFFF"
             android:textSize="30dp"
             android:textStyle="bold" />
-    </RelativeLayout> -->
+    </RelativeLayout>
+    -->
+
+    <Button
+        android:id="@+id/btn_home_findacar"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_def_big"
+        android:text="FIND A CAR"
+        android:textColor="#d84a49"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_home_findacar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/logomid" />
 
 </RelativeLayout>

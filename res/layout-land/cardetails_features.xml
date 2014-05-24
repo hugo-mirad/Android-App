@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -21,9 +20,9 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Car Features"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/carfeatures_button1"

@@ -46,7 +46,8 @@
             android:id="@+id/ll_features"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp" >
         </LinearLayout>
     </ScrollView>
 

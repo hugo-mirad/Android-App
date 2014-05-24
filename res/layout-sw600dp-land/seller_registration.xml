@@ -9,16 +9,16 @@
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" >
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="10dp" >
 
         <RelativeLayout
             android:id="@+id/relativeLayout2"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/relativeLayout1"
-            android:layout_marginTop="100dp" >
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/tv_seller_registration"
@@ -131,12 +131,12 @@
 
             <Button
                 android:id="@+id/btn_seller_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
                 android:layout_below="@+id/et_seller_registration_phone"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="REGISTER"
                 android:textColor="#d84a49"
                 android:textStyle="bold" />
@@ -144,6 +144,7 @@
     </ScrollView>
 
     <RelativeLayout
+        android:id="@+id/rl"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#d84a49" >
@@ -157,13 +158,13 @@
             android:layout_marginTop="15dp"
             android:text="User Registration"
             android:textColor="#FFFFFF"
-            android:textSize="34dp"
+            android:textSize="26sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/reg_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="7dp"

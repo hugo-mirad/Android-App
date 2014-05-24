@@ -106,7 +106,7 @@
 
                 <TextView
                     android:id="@+id/et_reg_name"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:textColor="#333333"
@@ -118,7 +118,7 @@
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp" >
+                android:layout_marginTop="15dp" >
 
                 <TextView
                     android:id="@+id/tv_reg_companyname"
@@ -132,7 +132,7 @@
 
                 <EditText
                     android:id="@+id/et_reg_companyname"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:focusable="false"
@@ -170,7 +170,7 @@
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp" >
+                android:layout_marginTop="15dp" >
 
                 <TextView
                     android:id="@+id/tv_reg_altphone"
@@ -212,7 +212,7 @@
 
                 <TextView
                     android:id="@+id/et_reg_emailid"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:inputType="textEmailAddress"
@@ -224,7 +224,7 @@
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp" >
+                android:layout_marginTop="15dp" >
 
                 <TextView
                     android:id="@+id/tv_reg_altemailid"
@@ -238,7 +238,7 @@
 
                 <EditText
                     android:id="@+id/et_reg_altemailid"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:focusable="false"
@@ -264,7 +264,7 @@
 
                 <EditText
                     android:id="@+id/et_reg_address"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:focusable="false"
@@ -289,7 +289,7 @@
 
                 <EditText
                     android:id="@+id/et_reg_city"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_marginLeft="35dp"
                     android:focusable="false"

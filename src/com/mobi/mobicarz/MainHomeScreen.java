@@ -1,6 +1,11 @@
 package com.mobi.mobicarz;
 
+import java.util.ArrayList;
 import java.util.UUID;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,12 +19,18 @@ import android.telephony.TelephonyManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.mobi.sellacar.Seller_Login;
 
 public class MainHomeScreen extends Activity {
 	public static String CustomerID;
 	public static final int TABLET_MIN_DP_WEIGHT = 450;
+	
+	public static JSONArray MakeListObj;
+	ArrayList<MakeObjects> modelList;
+	// = new ArrayList<MakeObjects>();
+	String[] MakeList_array;
 
 	public boolean isOnline() {
 
@@ -64,6 +75,32 @@ public class MainHomeScreen extends Activity {
 			btn_home_findcar = (Button) findViewById(R.id.btn_home_findacar);
 			btn_home_login = (Button) findViewById(R.id.btn_home_login);
 			btn_home_info = (Button) findViewById(R.id.btn_home_info);
+			
+		//	loaddata();
+				
+				
+				String uno =  MainHomeScreen.CustomerID; 
+				String url1 = "http://www.unitedcarexchange.com/MobileService/ServiceMobile.svc/GetMakeCounts/ds3lkDFD1F5fFGnf2daFs45REsd6re54yb0sc654"
+						+ "/" + uno;
+				System.out.println("this is home url"+url1);
+				JSONParser jParser = new JSONParser();
+				JSONObject json = jParser.getJSONFromUrl(url1);
+			//	System.out.println("this is url" + url1);
+				try {
+					MakeListObj = json.getJSONArray("GetMakeCountsResult");
+					int k = MakeListObj.length();
+					System.out.println("this is json array length" + k+MakeListObj);
+				} catch (JSONException e) {
+					e.printStackTrace();
+					Toast.makeText(getApplicationContext(),
+							"Server Error occured,Please try again", Toast.LENGTH_LONG)
+							.show();
+				}
+				catch (NullPointerException e) {
+					
+					// TODO: handle exception
+					Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+				}
 	
 
 			btn_home_findcar.setOnClickListener(new OnClickListener() {
@@ -124,7 +161,43 @@ public class MainHomeScreen extends Activity {
 		}
 
 	}
+	/*private void loaddata() {
+		// TODO Auto-generated method stub
+		String url = "http://unitedcarexchange.com/CarService/Service.svc/GetMakes";
+		JSONParser jParser = new JSONParser();
+		JSONObject json = jParser.getJSONFromUrl(url);
+		//System.out.println("this is url" + url);
+		try {
+			MakeListObj = json.getJSONArray("GetMakesResult");
+			MakeList_array = new String[MakeListObj.length()];
 
+			MakeObjects modelCarObjects = null;
+
+			for (int i = 0; i < MakeListObj.length(); i++) {
+
+				modelCarObjects = new MakeObjects();
+				// add to country names array
+				modelCarObjects.setModelName(MakeListObj.getJSONObject(i)
+						.getString("_make"));
+				modelCarObjects.setModelId(MakeListObj.getJSONObject(i)
+						.getString("_makeID"));
+				modelList.add(modelCarObjects);
+
+				MakeList_array[i] = modelCarObjects.getModelName();
+				int k = MakeList_array.length;
+			//	System.out.println("this is length of make" + k);
+
+			}
+
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}catch (NullPointerException e) {
+			
+			// TODO: handle exception
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+		}
+	}*/
 	public void onBackPressed() {
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
 				MainHomeScreen.this);

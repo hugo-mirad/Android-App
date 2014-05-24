@@ -36,6 +36,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text=""
+            android:maxLength="15"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />

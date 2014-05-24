@@ -106,12 +106,16 @@ public class Sell_VehicleType extends Activity {
 			sellvehicle_save = (Button) findViewById(R.id.btn_sellcarvehicle_save);
 			sellvehicle_back = (Button) findViewById(R.id.btn_sellcarvehicleedit_back);
 			sellvehicle_cancel = (Button) findViewById(R.id.btn_sellcarvehicleedit_cancel);
+			if(make.equals("0")&&model.equals("0")&&year.equals("0")){
+				Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+			}else{
 			et_sellvehicletype_make.setText(make);
 			et_sellvehicletype_model.setText(model);
 			et_sellvehicletype_year.setText(year);
 			tv_sellvehicle_make.setText(make);
 			tv_sellvehicle_model.setText(model);
 			tv_sellvehicle_year.setText(year);
+			}
 
 			ArrayAdapter aa = new ArrayAdapter(this,
 					android.R.layout.simple_spinner_item, items);

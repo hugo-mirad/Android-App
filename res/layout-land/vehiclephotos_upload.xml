@@ -94,7 +94,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/arrow_left_enabled" />
+        android:src="@drawable/arrow_left_disabled" />
 
     <ImageView
         android:id="@+id/right_arrow_imageview"
@@ -103,7 +103,7 @@
         android:layout_alignRight="@+id/btn_vehiclephoto_upload"
         android:layout_alignTop="@+id/left_arrow_imageview"
         android:layout_marginRight="10dp"
-        android:src="@drawable/arrow_right_disabled" />
+        android:src="@drawable/arrow_right_enabled" />
 
     <TextView
         android:id="@+id/photo_totalimages"
@@ -113,7 +113,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:text=""
-        android:textColor="#FFFFFF" />
+        android:textColor="#333333" />
 
     <TextView
         android:id="@+id/tv_gallerycarno"
@@ -122,6 +122,6 @@
         android:layout_below="@+id/photo_totalimages"
         android:layout_centerHorizontal="true"
         android:text=""
-        android:textColor="#FFFFFF" />
+        android:textColor="#333333" />
 
 </RelativeLayout>

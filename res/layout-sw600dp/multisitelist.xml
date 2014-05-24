@@ -56,18 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-            <!--
-                 <TextView
-                android:id="@+id/tv_col1"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/payblox_terminal"
-                android:layout_margin="1dp"
-                android:gravity="center_horizontal"
-                android:text="S.No"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
-            -->
+         
 
             <TextView
                 android:id="@+id/tv_col2"
@@ -78,7 +67,7 @@
                 android:layout_toRightOf="@+id/tv_col1"
                 android:gravity="center_horizontal"
                 android:text="Website"
-                android:textColor="@android:color/white"
+                android:textColor="#333333"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -105,7 +94,7 @@
                 android:layout_toRightOf="@+id/tv_col2"
                 android:gravity="center_horizontal"
                 android:text="Posted Date"
-                android:textColor="@android:color/white"
+                android:textColor="#333333"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -118,7 +107,7 @@
                 android:layout_toRightOf="@+id/tv_col4"
                 android:gravity="center_horizontal"
                 android:text="Validity(Days)"
-                android:textColor="@android:color/white"
+                android:textColor="#333333"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -131,7 +120,7 @@
                 android:layout_toRightOf="@+id/tv_col5"
                 android:gravity="center_horizontal"
                 android:text="URL"
-                android:textColor="@android:color/white"
+                android:textColor="#333333"
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:visibility="gone" />

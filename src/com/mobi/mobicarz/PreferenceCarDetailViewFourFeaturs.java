@@ -68,13 +68,18 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 		if (isOnline()) {
 			//System.out.println("this is features view");
 			setContentView(R.layout.cardetails_features);
-			features_carid = CarDetailView.car_id;
+			features_carid = PreferenceCarDetailViewFour.car_id;
 			back = (Button) findViewById(R.id.carfeatures_button1);
 			btn_car = (Button) findViewById(R.id.car);
 			btn_mylist = (Button) findViewById(R.id.mylist);
 			btn_preferencs = (Button) findViewById(R.id.preference);
 			btn_search = (Button) findViewById(R.id.search);
 			btn_preferencs.setBackgroundResource(R.drawable.preference_act);
+			TextView tv_show_content=(TextView)findViewById(R.id.show_content);
+			String year=PreferenceCarDetailViewFour.year1;
+			String make=PreferenceCarDetailViewFour.make1;
+			String model=PreferenceCarDetailViewFour.model1;
+			tv_show_content.setText(year+" "+make+" "+model);
 			back.setOnClickListener(new OnClickListener() {
 
 				@Override
@@ -229,9 +234,9 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_comfort.setTextSize(getResources()
 					.getDimension(R.dimen.textsize));
 			tv_comfort.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_comfort.setTextColor(Color.WHITE);
+			tv_comfort.setTextColor(Color.parseColor("#333333"));
 			tv.setText(res + ".");
-			tv.setTextColor(Color.WHITE);
+			tv.setTextColor(Color.parseColor("#333333"));
 			tv.setTextSize(getResources().getDimension(R.dimen.textsize1));
 			tv_comfort.setPadding(padding1, padding2, padding3, padding4);
 			if (res != null) {
@@ -244,9 +249,9 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_seats.setText("Seats: ");
 			tv_seats.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_seats.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_seats.setTextColor(Color.WHITE);
+			tv_seats.setTextColor(Color.parseColor("#333333"));
 			tv1.setText(seats + ".");
-			tv1.setTextColor(Color.WHITE);
+			tv1.setTextColor(Color.parseColor("#333333"));
 			tv1.setTextSize(getResources().getDimension(R.dimen.textsize1));
 			tv_seats.setPadding(padding1, padding2, padding3, padding4);
 			if (seats != null) {
@@ -259,11 +264,11 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_safety
 					.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_safety.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_safety.setTextColor(Color.WHITE);
+			tv_safety.setTextColor(Color.parseColor("#333333"));
 			tv2.setText(safety + ".");
 			tv_safety.setPadding(padding1, padding2, padding3, padding4);
 			tv2.setTextSize(getResources().getDimension(R.dimen.textsize1));
-			tv2.setTextColor(Color.WHITE);
+			tv2.setTextColor(Color.parseColor("#333333"));
 			if (safety != null) {
 				ll_features.addView(tv_safety);
 				ll_features.addView(tv2);
@@ -274,10 +279,10 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_sound.setText("Sound System: ");
 			tv_sound.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_sound.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_sound.setTextColor(Color.WHITE);
+			tv_sound.setTextColor(Color.parseColor("#333333"));
 			tv3.setText(sound + ".");
 			tv3.setTextSize(getResources().getDimension(R.dimen.textsize1));
-			tv3.setTextColor(Color.WHITE);
+			tv3.setTextColor(Color.parseColor("#333333"));
 			tv_sound.setPadding(padding1, padding2, padding3, padding4);
 			if (sound != null) {
 				ll_features.addView(tv_sound);
@@ -289,9 +294,9 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_new.setText("New: ");
 			tv_new.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_new.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_new.setTextColor(Color.WHITE);
+			tv_new.setTextColor(Color.parseColor("#333333"));
 			tv4.setText(new1 + ".");
-			tv4.setTextColor(Color.WHITE);
+			tv4.setTextColor(Color.parseColor("#333333"));
 			tv4.setTextSize(getResources().getDimension(R.dimen.textsize1));
 			tv_new.setPadding(padding1, padding2, padding3, padding4);
 			if (new1 != null) {
@@ -304,10 +309,10 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_window
 					.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_window.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_window.setTextColor(Color.WHITE);
+			tv_window.setTextColor(Color.parseColor("#333333"));
 			tv5.setText(windows + ".");
 			tv5.setTextSize(getResources().getDimension(R.dimen.textsize1));
-			tv5.setTextColor(Color.WHITE);
+			tv5.setTextColor(Color.parseColor("#333333"));
 			tv_window.setPadding(padding1, padding2, padding3, padding4);
 			if (windows != null) {
 				ll_features.addView(tv_window);
@@ -318,9 +323,9 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_other.setText("Other: ");
 			tv_other.setTextSize(getResources().getDimension(R.dimen.textsize));
 			tv_other.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_other.setTextColor(Color.WHITE);
+			tv_other.setTextColor(Color.parseColor("#333333"));
 			tv6.setText(others + ".");
-			tv6.setTextColor(Color.WHITE);
+			tv6.setTextColor(Color.parseColor("#333333"));
 			tv6.setTextSize(getResources().getDimension(R.dimen.textsize1));
 			tv_other.setPadding(padding1, padding2, padding3, padding4);
 			if (others != null) {
@@ -333,9 +338,9 @@ public class PreferenceCarDetailViewFourFeaturs extends Activity {
 			tv_specials.setTextSize(getResources().getDimension(
 					R.dimen.textsize));
 			tv_specials.setTypeface(Typeface.DEFAULT_BOLD);
-			tv_specials.setTextColor(Color.WHITE);
+			tv_specials.setTextColor(Color.parseColor("#333333"));
 			tv7.setText(specials + ".");
-			tv7.setTextColor(Color.WHITE);
+			tv7.setTextColor(Color.parseColor("#333333"));
 			tv7.setTextSize(getResources().getDimension(R.dimen.textsize1));
 			tv_specials.setPadding(padding1, padding2, padding3, padding4);
 			if (specials != null) {

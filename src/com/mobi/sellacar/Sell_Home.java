@@ -155,6 +155,9 @@ public class Sell_Home extends Activity {
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
+					}catch (NullPointerException e) {
+						// TODO: handle exception
+						Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
 					}
 
 					if (res.equals("Success")) {

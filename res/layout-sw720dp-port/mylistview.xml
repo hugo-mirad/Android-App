@@ -83,7 +83,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
         android:text="@string/nodata"
-        android:textColor="#FFFFFF"
+        android:textColor="#333333"
         android:textSize="28dp" />
 
     <!--

@@ -5,26 +5,13 @@
     android:background="#EDEDED" >
 
     <TextView
-        android:id="@+id/textView1_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text=""
-        android:textColor="#d84a49"
-        android:textSize="32dp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/tv_contactphno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tv_contact"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/tv_contact"
-        android:text="888-786-8307"
+        android:text="888-465-6693"
         android:textColor="#d84a49"
         android:textSize="30px" />
 
@@ -38,17 +25,6 @@
         android:text="info@mobicarz.com"
         android:textColor="#d84a49"
         android:textSize="30px" />
-
-    <TextView
-        android:id="@+id/tv_about_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="45dp"
-        android:textColor="#d84a49"
-        android:textSize="32dp" />
 
     <TextView
         android:id="@+id/tv_portal"
@@ -66,7 +42,7 @@
         android:id="@+id/tv_unitedcar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_about_home"
+        android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="150dp"
         android:text="www.mobicarz.com"
@@ -96,6 +72,36 @@
         android:textColor="#333333"
         android:textSize="26dp" />
 
-    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d84a49" >
+
+        <TextView
+            android:id="@+id/tv_about_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textView1_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -357,7 +357,7 @@ public class SearchView extends Activity implements OnClickListener {
 		try {
 			
 			
-			String uno =  MainHomeScreen.CustomerID; 
+			/*String uno =  MainHomeScreen.CustomerID; 
 			String url1 = "http://www.unitedcarexchange.com/MobileService/ServiceMobile.svc/GetMakeCounts/ds3lkDFD1F5fFGnf2daFs45REsd6re54yb0sc654"
 					+ "/" + uno;
 			JSONParser jParser = new JSONParser();
@@ -373,11 +373,13 @@ public class SearchView extends Activity implements OnClickListener {
 						"Server Error occured,Please try again", Toast.LENGTH_LONG)
 						.show();
 			}
+			*/
 			
+		/*if(MakeListObj.equals(null)){
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+		}else{*/
 			
-			
-			
-		//	MakeListObj = MainActivity.MakeListObj;
+		MakeListObj = MainHomeScreen.MakeListObj;
 			int k = MakeListObj.length();
 			//System.out.println("this is json array length" + k);
 			MakeList_array = new String[MakeListObj.length()];
@@ -399,13 +401,19 @@ public class SearchView extends Activity implements OnClickListener {
 				modelList.add(modelCarObjects);
 				MakeList_array[i] = modelCarObjects.getModelName();
 				// MakeList_array makelist=new MakeList_array();
+				if(MakeList_array.equals(null)){
+					Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+				}else{
 				spinnerMakes.setAdapter(new ArrayAdapter<String>(
 						SearchView.this,android.R.layout.simple_spinner_item, MakeList_array));
 				OnItemSelectedListener spinnerListener = new MyOnItemSelectedListener(
 						this);
 				spinnerMakes.setOnItemSelectedListener(spinnerListener);
+				}
+			
 
 			}
+		
 
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
@@ -416,7 +424,9 @@ public class SearchView extends Activity implements OnClickListener {
 					.show();
 
 		}
-
+		catch(NullPointerException e){
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+		}
 	}
 
 	private void displayCountries(String response) {

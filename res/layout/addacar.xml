@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/login_bg"
+    android:background="#EDEDED"
     android:orientation="vertical" >
 
     <ScrollView
@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
                 android:text="Make*:"
-                android:textColor="#FFFFFF"
+                android:textColor="#333333"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                 android:layout_below="@+id/sp_addacar_make"
                 android:layout_marginTop="20dp"
                 android:text="Model*:"
-                android:textColor="#FFFFFF"
+                android:textColor="#333333"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
                 android:layout_below="@+id/spin2"
                 android:layout_marginTop="20dp"
                 android:text="Year*:"
-                android:textColor="#FFFFFF"
+                android:textColor="#333333"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                 android:layout_below="@+id/sp_year"
                 android:layout_marginTop="20dp"
                 android:text="Price:"
-                android:textColor="#FFFFFF"
+                android:textColor="#333333"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                 android:layout_alignLeft="@+id/sp_year"
                 android:ems="10"
                 android:inputType="number"
-                android:textColor="#000000" />
+                android:textColor="#333333" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -106,7 +106,7 @@
                 android:layout_below="@+id/et_price"
                 android:layout_marginTop="30dp"
                 android:text="Mileage:"
-                android:textColor="#FFFFFF"
+                android:textColor="#333333"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -119,23 +119,26 @@
                 android:layout_alignLeft="@+id/et_price"
                 android:ems="10"
                 android:inputType="number"
-                android:textColor="#000000" />
+                android:textColor="#333333" />
         </RelativeLayout>
     </ScrollView>
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#444" >
+        android:layout_height="50dp"
+        android:background="#d84a49" >
 
         <Button
             android:id="@+id/btn_addacar_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/back_small" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#d84a49"
+            android:text="BACK"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView5"
@@ -143,10 +146,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="Add  A New Car"
             android:textColor="#FFFFFF"
-            android:textSize="20dp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <Button
@@ -154,9 +157,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp"
-            android:text="ADD" />
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#d84a49"
+            android:text="ADD"
+            android:textColor="#FFFFFF" />
     </RelativeLayout>
 
 </RelativeLayout>

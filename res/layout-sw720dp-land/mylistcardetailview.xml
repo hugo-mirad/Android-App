@@ -86,20 +86,12 @@
                 android:background="@drawable/mobi_back"
                 android:textColor="#FFFFFF" />
 
-            <!--
-                 <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back_small"
-                android:visibility="gone" />
-            -->
-
             <TextView
                 android:id="@+id/tv_cardetailview_year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="350dp"
+                android:layout_marginLeft="420dp"
+                android:layout_marginTop="30dp"
                 android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="28dp"
@@ -110,6 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
+                android:layout_marginTop="30dp"
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
@@ -121,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
+                android:layout_marginTop="30dp"
                 android:maxLength="8"
                 android:text=""
                 android:textColor="#FFFFFF"
@@ -152,7 +146,7 @@
                 android:layout_height="250dp"
                 android:layout_marginLeft="500dp"
                 android:layout_marginRight="150dp"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="15dp" />
 
             <TableRow
                 android:id="@+id/tableRow20"
@@ -161,7 +155,7 @@
 
                 <Button
                     android:id="@+id/call"
-                   android:layout_width="140dp"
+                    android:layout_width="140dp"
                     android:layout_height="70dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/mobicall_big"
@@ -183,14 +177,14 @@
 
                 <Button
                     android:id="@+id/mylistcarddetails_features"
-                     android:layout_width="140dp"
+                    android:layout_width="140dp"
                     android:layout_height="70dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/btn_def_big"
                     android:text="FEATURES"
                     android:textColor="#d84a49"
                     android:textSize="22sp"
-                    android:textStyle="bold"  />
+                    android:textStyle="bold" />
             </TableRow>
 
             <ScrollView

@@ -526,6 +526,9 @@ public class PreferencesFive extends Activity implements OnClickListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		catch(NullPointerException e){
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
+		}
 	}
 
 	public class MyOnItemSelectedListener implements OnItemSelectedListener {

@@ -518,6 +518,8 @@ public class PreferencesTwo extends Activity implements OnClickListener {
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}catch(NullPointerException e){
+			Toast.makeText(getApplicationContext(), "Network error", Toast.LENGTH_LONG).show();
 		}
 	}
 

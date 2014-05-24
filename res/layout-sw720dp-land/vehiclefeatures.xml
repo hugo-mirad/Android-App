@@ -85,7 +85,7 @@
                     android:layout_marginLeft="180dp"
                     android:text="TextView"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:maxLength="8"
                     android:text="make"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:maxLength="8"
                     android:text="model"
                     android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>
