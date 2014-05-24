@@ -191,6 +191,10 @@ public class Seller_Registration extends Activity {
 							Intent in = new Intent(getApplicationContext(),
 									Seller_Login.class);
 							startActivity(in);
+						}else if(res.equals("false")){
+							Toast.makeText(getApplicationContext(),
+									"Server Error occured,Please try again",
+									Toast.LENGTH_LONG).show();
 						}
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
